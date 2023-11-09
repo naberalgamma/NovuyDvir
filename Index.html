@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="menuWrapper">
+        <article class="menuLogoBox">
+          <img
+            class="menuLogo"
+            src="./Images/logoHeader.svg"
+            alt="logoHeader"
+          />
+          <h1 class="menuTitle">ТОВ “НОВИЙ-ДВІР”</h1>
+        </article>
+        <nav>
+          <ul class="menuMenuBox">
+            <li class="menuItemLi">
+              <a class="menuItem menuItemActive" href="index.html">Головна</a>
+            </li>
+            <li class="menuItemLi">
+              <a class="menuItem" href="../Product/Product.html">Продукція</a>
+            </li>
+            <!-- <li>
+            <a class="menuItem" href="../Promotions/Promotions.html">Акції</a>
+          </li> -->
+            <li class="menuItemLi">
+              <a class="menuItem" href="../AboutUs/AboutUs.html">Про нас</a>
+            </li>
+            <li class="menuItemLi">
+              <a class="menuItem" href="../Contacts/Contacts.html">Контакти</a>
+            </li>
+            <!-- <li class="menuItem">Вігуки</li> -->
+          </ul>
+        </nav>
+        <div class="menuBurger">
+          <span></span>
+        </div>
+        <div class="menuContact">
+          <img src="./Images/main/menu/telephone.svg" alt="phone" />
+          <a href="tel:+380673631151" class="menuPhone">067 363 1151</a>
+          <a class="manuLink" href="#">Зателефонувати</a>
+        </div>
+      </section>
+      <section class="headerBlock">
+        <h2 class="headerTitle">Виробник металевої сітки</h2>
+        <ul class="headerList">
+          <li class="headerListItem">Індивідуальний підхід</li>
+          <li class="headerListItem">Ціна від виробника</li>
+          <li class="headerListItem">Високотехнологічне виробництво</li>
+        </ul>
+        <div class="headerPhoneLinks">
+          <p class="headerCalcPrice">Зателефонувати</p>
+          <p class="headerGetCall">Замовити дзвінок</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="CallBox">
+        <div class="closeIconBox">
+          <img
+            class="closeIcon"
+            src="./Images/main/closeIcon.svg"
+            alt="close"
+          />
+        </div>
+        <article class="callLogoBox">
+          <img class="" src="./Images/logoHeader.svg" alt="logo" />
+          <h2 class="callName">ТОВ “НОВИЙ-ДВІР”</h2>
+        </article>
+        <a href="tel:+380673631151" class="callNumber">+38 067 363 1151</a>
+        <div class="callCopyBox">
+          <p class="callCopy" onclick="copyContent()">Скопіювати номер</p>
+        </div>
+      </div>
+      <h3 class="goodsTitle">Продукція</h3>
+      <section class="goodsItemsContainer">
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhoto"
+            src="./Images/Goods/WeldedMesh.svg"
+            alt="WeldedMesh"
+          />
+          <h4 class="goodsItemTitle">Зварна сітка</h4>
+          <p class="goodsDescription">
+            Вкрай важливий елемент, який застосовується в будівництві, варіант
+            зварної сітки. Має застосування в різних областях, але в основному
+            використовується для зміцнення конструкцій.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhotoRoll"
+            src="./Images/Goods/WeldetMeshInRolls.svg"
+            alt="WeldetMeshInRolls"
+          />
+          <h4 class="goodsItemTitle">Сітка рабиця в рулонах</h4>
+          <p class="goodsDescription">
+            Плетена за особливою технологією металева сітка, де одна плоска
+            дротова спіраль вкручується в іншу. Через свою дешевизну і простоту
+            в установці рабиця затребувана в промисловому, сільському
+            господарстві та приватному будівництві для виготовлення огорож та
+            армування стін.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhotoComposit"
+            src="./Images/Goods/CompositMesh.svg"
+            alt="CompositMesh"
+          />
+          <h4 class="goodsItemTitleComposit">Композитна сітка</h4>
+          <p class="goodsDescription">
+            Це різновид склопластикової композитної арматури. Для її
+            виготовлення використовують передові інноваційні технології. В
+            основі така сітка складається з скловолокна, яке з'єднане смолами.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+      </section>
+      <section class="goodsItemsContainer">
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhoto"
+            src="./Images/Goods/WeldedMesh.svg"
+            alt="WeldedMesh"
+          />
+          <h4 class="goodsItemTitle">Зварна сітка</h4>
+          <p class="goodsDescription">
+            Вкрай важливий елемент, який застосовується в будівництві, варіант
+            зварної сітки. Має застосування в різних областях, але в основному
+            використовується для зміцнення конструкцій.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhotoRoll"
+            src="./Images/Goods/WeldetMeshInRolls.svg"
+            alt="WeldetMeshInRolls"
+          />
+          <h4 class="goodsItemTitle">Сітка рабиця в рулонах</h4>
+          <p class="goodsDescription">
+            Плетена за особливою технологією металева сітка, де одна плоска
+            дротова спіраль вкручується в іншу. Через свою дешевизну і простоту
+            в установці рабиця затребувана в промисловому, сільському
+            господарстві та приватному будівництві для виготовлення огорож та
+            армування стін.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+        <article class="goodsItemBox">
+          <img
+            class="goodsPhotoComposit"
+            src="./Images/Goods/CompositMesh.svg"
+            alt="CompositMesh"
+          />
+          <h4 class="goodsItemTitleComposit">Композитна сітка</h4>
+          <p class="goodsDescription">
+            Це різновид склопластикової композитної арматури. Для її
+            виготовлення використовують передові інноваційні технології. В
+            основі така сітка складається з скловолокна, яке з'єднане смолами.
+          </p>
+          <div class="goodsCalcBox">
+            <a class="goodsCalcPrice" href="../Product/Product.html"
+              >Дізнатися більше</a
+            >
+          </div>
+        </article>
+      </section>
+      <section class="clientBlock">
+        <p class="clientTextShort">
+          Маючи великий верстатний парк, і будучи виробником великого
+          асортименту продукції
+        </p>
+        <p class="clientText">
+          Ми зацікавлені в роботі з дистреб’ютерами і оптовими клієнтами такими
+          як будівельні компанії, оптові будівельні магазини і бази, металобази
+          і інтернет магазини будівельних матеріалів.
+        </p>
+        <!-- <div class="clientPhoneLinks">
+          <a class="headerCalcPrice" href="#">Дізнатися більше</a>
+          <a class="headerGetCall" href="#">Замовити дзвінок</a>
+        </div> -->
+        <div class="clientPhoneLinks">
+          <p class="headerCalcPrice showPhoneBox3">Зателефонувати</p>
+          <p class="headerGetCall getCall">Замовити дзвінок</p>
+        </div>
+      </section>
+      <section class="about">
+        <div class="aboutCountainer">
+          <h4 class="aboutTitle">Про нас</h4>
+          <article class="aboutTitleBox">
+            <img src="./Images/logoHeader.svg" alt="logoHeader" />
+            <h3 class="aboutNameFirm">ТОВ “НОВИЙ-ДВІР”</h3>
+          </article>
+          <div class="aboutTextBox">
+            <p class="aboutText">
+              ТОВ «Новий Двір» – компанія, яка пропонує широкий та
+              конструктивний асортимент товарів, в основі якого огороджувальні
+              конструкції на будь-який смак та під будь-яке завдання. Ми є
+              виробниками, тому пропонуємо найвигідніші ціни на весь асортимент,
+              представлений у нашому магазині. Завдяки власному виробництву ми
+              ретельно стежимо за якістю тих товарів, які отримує наш споживач.
+              Крім того, ми самі можемо контролювати ціноутворення в нашому
+              інтернет-магазині та стежити за тим, щоб кожен клієнт міг завжди
+              отримати лише найвигідніші ціни на весь асортимент нашої
+              продукції. У нас в каталозі не тільки будівельна сітка, але й інші
+              потрібні матеріали. Завдяки вигідним умовам купівлі та широкому
+              асортименту товарів більшість наших клієнтів переходять у розряд
+              постійних. Будемо раді бачити там і вас!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="partners">
+        <h3 class="partnersTitle">Партнери</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+      <section class="cooperation">
+        <h3 class="cooperationTitle">Співпраця з нами</h3>
+        <p class="cooperationText">
+          Нашим постійним оптовим клієнтам ми пропонуємо широкий спектр
+          можливостей:
+        </p>
+        <div class="cooperationBenefitsWrapper">
+          <div class="cooperationBenefitsBox cooperationBenefitsBoxRelat">
+            <p class="cooperationBenefitsFlexibl">гнучкі фінансові умови</p>
+            <img
+              class="cooperationYellowCircle"
+              src="./Images/main/Cooperation/yellowCircle.svg"
+              alt="yellowCircle"
+            />
+            <img
+              class="cooperationLine"
+              src="./Images/main/Cooperation/line.svg"
+              alt="line"
+            />
+            <img
+              class="cooperationYellowCircleSecond"
+              src="./Images/main/Cooperation/yellowCircle.svg"
+              alt="yellowCircle"
+            />
+            <p class="cooperationBenefits">
+              можливість виготовлення продукції у стислі терміни
+            </p>
+          </div>
+          <div class="cooperationBenefitsBox">
+            <p class="cooperationBenefitsGoodsCreate">
+              виготовлення продукції за параметрами замовника
+            </p>
+            <img
+              class="cooperationYellowCircleThird"
+              src="./Images/main/Cooperation/yellowCircle.svg"
+              alt="yellowCircle"
+            />
+            <p class="cooperationBenefits">
+              вирішення всіх логістичних питань щодо доставки нашої продукції
+            </p>
+          </div>
+          <div class="cooperationBenefitsBox">
+            <p class="cooperationBenefitsKeep">
+              можливість тимчасового зберігання купленої продукції на наших
+              складах
+            </p>
+            <img
+              class="cooperationYellowCircleThird"
+              src="./Images/main/Cooperation/yellowCircle.svg"
+              alt="yellowCircle"
+            />
+            <p class="cooperationBenefits">
+              технічна та документальна підтримка
+            </p>
+          </div>
+
+          <div class="cooperationCallBox">
+            <p class="cooperationCall showPhoneBox4">Зателефонувати</p>
+          </div>
+        </div>
+        <div class="cooperationSmall">
+          <div class="coopBox">
+            <div class="coopLine">
+              <img
+                class="coopLineYellow"
+                src="./Images/main/Cooperation/line.svg"
+                alt="line"
+              />
+            </div>
+            <div class="coopBenef">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText">
+                можливість виготовлення продукції у стислі терміни
+              </p>
+            </div>
+            <div class="coopBenef">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText">
+                вирішення всіх логістичних питань щодо доставки нашої продукції
+              </p>
+            </div>
+            <div class="coopBenef">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText">технічна та документальна підтримка</p>
+            </div>
+          </div>
+          <div class="coopBox2">
+            <div class="coopLine2">
+              <img
+                class="coopLineYellow"
+                src="./Images/main/Cooperation/line.svg"
+                alt="line"
+              />
+            </div>
+            <div class="coopBenef2">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText2">гнучкі фінансові умови</p>
+            </div>
+            <div class="coopBenef2">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText2">
+                виготовлення продукції за параметрами замовника
+              </p>
+            </div>
+            <div class="coopBenef2">
+              <img
+                src="./Images/main/Cooperation/YellowCircleSmall.svg"
+                alt="YellowCircleSmall"
+              />
+              <p class="coopText2">
+                можливість тимчасового зберігання купленої продукції на наших
+                складах
+              </p>
+            </div>
+          </div>
+          <div class="cooperationCallBox">
+            <p class="cooperationCall showPhoneBox5">Зателефонувати</p>
+          </div>
+        </div>
+      </section>
+      <section class="consultation">
+        <img
+          class="consultationLeftCage"
+          src="./Images/main/consultation/cageLeft.svg"
+          alt="cageLeft"
+        />
+        <img
+          class="consultationRightCage"
+          src="./Images/main/consultation/cageRight.svg"
+          alt="cageRight"
+        />
+        <article class="consultationFormBox">
+          <h3 class="consultationTitle">
+            Залиште заявку на безкоштовну консультацію
+          </h3>
+          <p class="consultationText">
+            Наш менеджер зв’яжеться з вами протягом 15 хвилин
+          </p>
+          <form action="http://127.0.0.1:5501/form" method="POST">
+            <!-- action="https://formsubmit.co/test202311@ukr.net"
+            method="POST" -->
+            <input
+              type="number"
+              class="consultationPhone"
+              name="phone"
+              placeholder="Номер телефону"
+            />
+            <input class="consultationPib" name="name" placeholder="Ім’я" />
+            <input
+              class="consultationSubmit"
+              type="submit"
+              value="Відправити"
+            />
+          </form>
+        </article>
+      </section>
+      <!-- -------------location------------ -->
+      <section class="location">
+        <article class="locationBox">
+          <h3 class="locationTitle">Де нас знайти</h3>
+          <h4 class="locationNames">Адреса:</h4>
+          <p class="locationInfo">
+            м. Рівне, вул. Присадибна, 14а, Рівне, Україна
+          </p>
+          <h4 class="locationNames">Email:</h4>
+          <a href="mailto:sitkand@gmail.com" class="locationInfo"
+            >sitkand@gmail.com</a
+          >
+          <h4 class="locationNames">Viber:</h4>
+          <a href="tel:+380673621151" class="locationInfo">067 362 1151</a>
+          <div class="locationMap">
+            <img class="locationPin" src="./Images/main/location/pin.svg" />
+            <p class="locationPinName">Де нас знайти?</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footerInfo">
+        <img
+          class="footerLogo"
+          src="./Images/logoHeader.svg"
+          alt="logoHeader"
+        />
+        <h3 class="footerTitle">ТОВ “НОВИЙ-ДВІР”</h3>
+        <p class="footerText">м. Рівне, вул. Присадибна, 14а, Рівне, Україна</p>
+        <div class="footerText">
+          <a href="mailto:sitkand@gmail.com" class="footerText"
+            >sitkand@gmail.com</a
+          >
+        </div>
+        <div class="footerText">
+          <a href="tel:+380673621151" class="footerText">067 362 1151</a>
+        </div>
+      </section>
+      <section>
+        <nav class="footerMenuBox">
+          <ul class="footerMenuBox">
+            <li class="menuItemLi">
+              <a class="footerMenuItem footerMenuItemActive" href="index.html"
+                >Головна</a
+              >
+            </li>
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="./Product/Product.html"
+                >Продукція</a
+              >
+            </li>
+            <!-- <li>
+              <a class="menuItem" href="../Promotions/Promotions.html">Акції</a>
+            </li> -->
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="../AboutUs/AboutUs.html"
+                >Про нас</a
+              >
+            </li>
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="../Contacts/Contacts.html"
+                >Контакти</a
+              >
+            </li>
+            <!-- <li class="menuItem">Вігуки</li> -->
+          </ul>
+        </nav>
+      </section>
+      <section class="socialNetwork">
+        <h4 class="socialTitle">Приєднуйтесь до нас</h4>
+        <div class="socialBox">
+          <a href="#">
+            <img src="./Images/footer/facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="./Images/footer/twitter.svg" alt="twitter" />
+          </a>
+          <a href="#">
+            <img src="./Images/footer/instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img src="./Images/footer/youtube.svg" alt="youtube" />
+          </a>
+        </div>
+      </section>
+      <section class="subscribe">
+        <h4 class="subscribeTitle">Підписатись на наші новини</h4>
+        <form
+          class="subscribeForm"
+          action="http://127.0.0.1:5501/form"
+          method="POST"
+        >
+          <input class="subscribeInput" name="name" placeholder="Ім’я" />
+          <input
+            type="email"
+            class="subscribeInput"
+            name="email"
+            placeholder="Email address"
+          />
+          <label class="subscribeCheckboxText">
+            <input class="subscribeCheckbox" type="checkbox" checked />
+            Я згійдний з правилами
+            <span class="checkmark"></span>
+          </label>
+          <button class="subscribeSubmit" type="submit">Підписатись</button>
+        </form>
+        <p class="copyright">
+          Copyright ©ТОВ Новий двір 2020 - 2022 Всі права захищені
+        </p>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>

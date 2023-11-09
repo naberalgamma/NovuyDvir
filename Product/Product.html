@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Product.css" />
+  </head>
+  <body>
+    <header>
+      <section class="menuWrapper">
+        <article class="menuLogoBox">
+          <img
+            class="menuLogo"
+            src="../Images/logoHeader.svg"
+            alt="logoHeader"
+          />
+          <h1 class="menuTitle">ТОВ “НОВИЙ-ДВІР”</h1>
+        </article>
+        <nav>
+          <ul class="menuMenuBox">
+            <li class="menuItemLi">
+              <a class="menuItem" href="../Index.html">Головна</a>
+            </li>
+            <li class="menuItemLi">
+              <a class="menuItem menuItemActive" href="../Product/Product.html"
+                >Продукція</a
+              >
+            </li>
+            <!-- <li>
+            <a class="menuItem" href="../Promotions/Promotions.html">Акції</a>
+          </li> -->
+            <li class="menuItemLi">
+              <a class="menuItem" href="../AboutUs/AboutUs.html">Про нас</a>
+            </li>
+            <li class="menuItemLi">
+              <a class="menuItem" href="../Contacts/Contacts.html">Контакти</a>
+            </li>
+            <!-- <li class="menuItem">Вігуки</li> -->
+          </ul>
+        </nav>
+        <div class="menuBurger">
+          <span></span>
+        </div>
+        <div class="menuContact">
+          <img src="../Images/main/menu/telephone.svg" alt="telephone" />
+          <a href="tel:+380673631151" class="menuPhone">067 363 1151</a>
+          <p class="manuLink">Зателефонувати</p>
+        </div>
+      </section>
+    </header>
+    <!-- //****************callBox******************* -->
+    <div class="CallBox">
+      <div class="closeIconBox">
+        <img
+          class="closeIcon"
+          src="../Images/main/closeIcon.svg"
+          alt="closeIcon"
+        />
+      </div>
+      <article class="callLogoBox">
+        <img class="" src="../Images/logoHeader.svg" alt="logoHeader" />
+        <h2 class="callName">ТОВ “НОВИЙ-ДВІР”</h2>
+      </article>
+      <a href="tel:+380673631151" class="callNumber">+38 067 363 1151</a>
+      <div class="callCopyBox">
+        <p class="callCopy" onclick="copyContent()">Скопіювати номер</p>
+      </div>
+    </div>
+    <!-- //---------------------------------------------------------------- -->
+    <!-- -------------orderGoods------------------------------------------- -->
+    <div class="orderGoodsWrapper">
+      <div class="closeIconBox">
+        <img
+          class="closeIconProduction"
+          src="../Images/main/closeIcon.svg"
+          alt="closeIcon"
+        />
+      </div>
+
+      <article class="consultationFormBox">
+        <h3 class="consultationTitle">
+          Залиште заявку на безкоштовну консультацію
+        </h3>
+        <p class="consultationText">
+          Наш менеджер зв’яжеться з вами протягом 15 хвилин
+        </p>
+        <form action="http://127.0.0.1:5501/form" method="POST">
+          <!-- action="https://formsubmit.co/test202311@ukr.net"
+        method="POST" -->
+          <div class="productOrderInputBox">
+            <input
+              type="number"
+              class="consultationPhone"
+              name="phone"
+              placeholder="Номер телефону"
+            />
+            <input class="consultationPib" name="name" placeholder="Ім’я" />
+            <input
+              type="email"
+              class="consultationEmail"
+              email="email"
+              placeholder="Email"
+            />
+            <input
+              class="consultationSubmit"
+              type="submit"
+              value="Відправити"
+            />
+          </div>
+        </form>
+      </article>
+    </div>
+    <!-- --------------------------------------------------------------------------- -->
+    <section class="productInfoWrapper">
+      <h2 class="productInfoTitle">Продукція</h2>
+      <p class="productInfoMotto">
+        Компанія «Новий Двір» – якісна сітка, дріт, профнастил
+      </p>
+      <p class="productInfoText">
+        ТОВ «Новий Двір» – компанія, яка пропонує широкий та конструктивний
+        асортимент товарів, в основі якого огороджувальні конструкції на
+        будь-який смак та під будь-яке завдання. Ми є виробниками, тому
+        пропонуємо найвигідніші ціни на весь асортимент, представлений у нашому
+        магазині. Завдяки власному виробництву ми ретельно стежимо за якістю тих
+        товарів, які отримує наш споживач.
+      </p>
+      <div class="productInfoLinks">
+        <p class="productInfoDetailCall">Замовити дзвінок</p>
+        <!-- <a class="productInfoGetCall" href="#">Замовити дзвінок</a> -->
+      </div>
+    </section>
+    <section>
+      <p
+        style="
+          display: flex;
+          justify-content: center;
+          font-size: 24px;
+          color: red;
+          text-align: center;
+          margin: 0 10px;
+        "
+      >
+        Замінив назву товару зверху в перших чотирьох блоках для наглядності
+      </p>
+      <section class="productGoodsContainer">
+        <article class="productGoodsBox product1">
+          <h4 class="productGoodsTitle productGoodsTitleFirst">
+            Зварна сітка в рулонах оцинкована і чорна
+          </h4>
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product1/weldedMeshInRolls.png"
+            alt="weldedMeshInRolls"
+          />
+
+          <p class="productGoodsText productGoodsTextLong">
+            Сітка зварна оцинкована(чорна) рулонна застосовується для армування
+            стін перед застосуванням штукатурних сумішей, а також для зведення
+            паркану.
+          </p>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn1">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product1-------------------- -->
+        <section class="weldedMeshInfoWrapper1">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product1/sitkaChornaZvarna1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">
+                Зварна сітка в рулонах оцинкована і чорна
+              </h3>
+              <p class="meshWeldedDescr">
+                Сітка зварна оцинкована(чорна) рулонна застосовується для
+                армування стін перед застосуванням штукатурних сумішей, а також
+                для зведення паркану.
+              </p>
+              <p class="meshWeldedDescr">
+                Виготовляють її з дроту діаметром від 0,6 мм до 3,0 мм шляхом
+                поперечного зварювання з заданим кроком. Висота рулона 1-1,5м.
+                Довжина рулона від 15 до 30м.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  по виду обробки: термічно оброблений і необроблений;
+                  загартований; нормалізований; стабілізований; холоднокатаний;
+                  калібрований.
+                </li>
+                <li>
+                  по виду поверхні: без покриття, оцинкований; з полімерним
+                  покриттям
+                </li>
+                <li>
+                  за типом перетину: круглий; шестигранний; квадратний;
+                  трапецієподібний; овальний; сегментний; зето - іксо подібний;
+                  клиноподібний; періодичного і спеціального профілю тощо.
+                </li>
+              </ul> -->
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product1/sitkaChornaZvarna2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">
+                Зварна сітка в рулонах оцинкована і чорна
+              </h3>
+              <p class="meshWeldedDescr">Області застосування:</p>
+              <ul class="meshWeldedList">
+                <li>
+                  армування залізобетонних конструкцій з ненормованою міцністю
+                </li>
+                <li>огородження дачних і присадибних ділянок</li>
+                <li>виготовлення каркасів парників і теплиць</li>
+                <li>виготовлення кліток, кріплення цегляної кладки</li>
+                <li>рмування дорожніх покриттів</li>
+              </ul>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose1">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------- -->
+        <article class="productGoodsBox product2">
+          <h4 class="productGoodsTitle">Сітка канілір</h4>
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product2/calinir.png"
+            alt="meshCanilir"
+          />
+
+          <p class="productGoodsText">Сітка застосовується для:</p>
+
+          <ul class="productCanilirBox">
+            <li class="productCanilir">&#8226; огорож</li>
+            <li class="productCanilir">&#8226; стелажів</li>
+            <li class="productCanilir">&#8226; огорож вентиляційних отворів</li>
+            <li class="productCanilir">
+              &#8226; виготовлення кліток і вольєрів
+            </li>
+            <li class="productCanilir">&#8226; для зведення парканів</li>
+          </ul>
+
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn2">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product2-------------------- -->
+        <section class="weldedMeshInfoWrapper2">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product2/canilirProduct1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка канілірована</h3>
+              <p class="meshWeldedDescr">Сітка застосовується для:</p>
+              <ul class="meshWeldedList">
+                <li>огорож</li>
+                <li>стелажів</li>
+                <li>огорож вентиляційних отворів</li>
+                <li>виготовлення кліток і вольєрів</li>
+                <li>для зведення парканів</li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product2/canilirProduct2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка канілірована</h3>
+              <!-- <p class="meshWeldedDescr">У нас в широкому асортименті:</p> -->
+              <p class="meshWeldedDescr">
+                Сітка канілірована (складно-рифлена) оцинкована. Виготовляється
+                з дротів діаметром від 2 до 6 мм. Представлена з чорного або
+                оцинкованого дроту, в картах на 1*2м і 1.5*2м Можливе
+                виготовлення карт різноманітних розмірів, під замовлення.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul> -->
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods2">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose2">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product3">
+          <h4 class="productGoodsTitle">Композитная арматура</h4>
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product3/composit.png"
+            alt="composit"
+          />
+
+          <p class="productGoodsText">
+            Використовується для армування бетонних конструкцій:
+          </p>
+          <ul class="productCanilirBox">
+            <li class="productCanilir">&#8226; для парника</li>
+            <li class="productCanilir">&#8226; для фундаменту</li>
+            <li class="productCanilir">&#8226; для теплиць</li>
+          </ul>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn3">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product3-------------------- -->
+        <section class="weldedMeshInfoWrapper3">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product3/kompositProd1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Композитная арматура</h3>
+              <p class="meshWeldedDescr">
+                Використовується для армування бетонних конструкцій:
+              </p>
+              <ul class="meshWeldedList">
+                <li>для парника</li>
+                <li>для фундаменту</li>
+                <li>для теплиць</li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product3/kompositProd2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Композитная арматура</h3>
+              <!-- <p class="meshWeldedDescr">У нас в широкому асортименті:</p> -->
+              <p class="meshWeldedDescr">
+                Композитная арматура(сітка) cкладається з склоровінгу
+                пов'язаного полімером на основі епоксидної смоли.
+              </p>
+              <p class="meshWeldedDescr">
+                Не токсична, за ступенем впливу на організм людини і навколишнє
+                середовище відноситься до 4 класу небезпеки (малонебезпечні).
+                Можна застосувати в промислово-цивільному, дорожньому
+                будівництві, також в бетонних конструкціях з армуванням, замість
+                сталевої арматури. Композитна арматура : Діаметр від 4 до 20 мм.
+                Довжина рулона 50-150м.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  Оцинкований дріт - стійкий до корозії, з круглим перетином і
+                  діаметром від 0,2 до 8 мм.
+                </li>
+                <li>
+                  Зварювальний дріт - застосовують у з'єднанні труб і
+                  металоконструкцій. Його діаметр - від 0,6 до 5 мм.
+                </li>
+                <li>
+                  В'язальний - виготовляється з низьковуглецевих типів сталі
+                  методом волочіння, і застосовується при виготовленні тросів,
+                  сітки та ін. Має зазвичай в діаметрі 2 мм.
+                </li>
+                <li>
+                  Армуючий - діаметром 4 мм, застосовується для додаткового
+                  армування залізобетонних конструкцій.
+                </li>
+                <li>
+                  Колючий дріт єгоза - армована стрічка з щербинами, яка
+                  застосовується для перешкоди потраплянню на територію.
+                  Зазвичай, такий дріт поєднують з відеоспостереженням.
+                </li>
+                <li>
+                  Пружинний дріт - виготовляється зі сталевої катанки.
+                  Відрізняється міцністю і пружністю.
+                </li>
+                <li>
+                  Спіраль Бруно - кручена з декількох проводів звичайного і
+                  колючого типу. Являє собою циліндричну спіраль 70-130 см в
+                  діаметрі і довжиною до 25 м.
+                </li>
+              </ul> -->
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods3">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose3">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product4">
+          <h4 class="productGoodsTitle">Дроти</h4>
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product4/drotu.png"
+            alt="wires"
+          />
+
+          <p class="productGoodsText">
+            Це різновид склопластикової композитної арматури. Для її
+            виготовлення використовують передові інноваційні технології. В
+            основі така сітка складається з скловолокна, яке з'єднане смолами.
+          </p>
+
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn4">Детальніше</p>
+          </div>
+        </article>
+        <!-- </section>
+      <section class="productGoodsContainer"> -->
+        <!-- -------------product4-------------------- -->
+        <section class="weldedMeshInfoWrapper4">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product4/drotuProd1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Дроти</h3>
+              <p class="meshWeldedDescr">
+                Зазвичай дріт поділяють на види за такими категоріями:
+              </p>
+              <ul class="meshWeldedList">
+                <li>
+                  по виду обробки: термічно оброблений і необроблений;
+                  загартований; нормалізований; стабілізований; холоднокатаний;
+                  калібрований.
+                </li>
+                <li>
+                  по виду поверхні: без покриття, оцинкований; з полімерним
+                  покриттям
+                </li>
+                <li>
+                  за типом перетину: круглий; шестигранний; квадратний;
+                  трапецієподібний; овальний; сегментний; зето - іксо подібний;
+                  клиноподібний; періодичного і спеціального профілю тощо.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product4/drotuProd2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Дроти</h3>
+              <p class="meshWeldedDescr">У нас в широкому асортименті:</p>
+              <ul class="meshWeldedList">
+                <li>
+                  Оцинкований дріт - стійкий до корозії, з круглим перетином і
+                  діаметром від 0,2 до 8 мм.
+                </li>
+                <li>
+                  Зварювальний дріт - застосовують у з'єднанні труб і
+                  металоконструкцій. Його діаметр - від 0,6 до 5 мм.
+                </li>
+                <li>
+                  В'язальний - виготовляється з низьковуглецевих типів сталі
+                  методом волочіння, і застосовується при виготовленні тросів,
+                  сітки та ін. Має зазвичай в діаметрі 2 мм.
+                </li>
+                <li>
+                  Армуючий - діаметром 4 мм, застосовується для додаткового
+                  армування залізобетонних конструкцій.
+                </li>
+                <li>
+                  Колючий дріт єгоза - армована стрічка з щербинами, яка
+                  застосовується для перешкоди потраплянню на територію.
+                  Зазвичай, такий дріт поєднують з відеоспостереженням.
+                </li>
+                <li>
+                  Пружинний дріт - виготовляється зі сталевої катанки.
+                  Відрізняється міцністю і пружністю.
+                </li>
+                <li>
+                  Спіраль Бруно - кручена з декількох проводів звичайного і
+                  колючого типу. Являє собою циліндричну спіраль 70-130 см в
+                  діаметрі і довжиною до 25 м.
+                </li>
+              </ul>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods4">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose4">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product5">
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product5/armatura.png"
+            alt="mechArmobelt"
+          />
+          <h4 class="productGoodsTitle">Сітка зварна армопояс</h4>
+          <p class="productGoodsText productGoodsTextLong">
+            Області застосування:
+          </p>
+          <ul class="productCanilirBox">
+            <li class="productCanilir">&#8226; штукатурні роботи</li>
+            <li class="productCanilir">
+              &#8226; армування при заливці підлог, перекриттів, фундаментів
+            </li>
+            <li class="productCanilir">
+              &#8226; зміцнення гірських виробітків
+            </li>
+            <li class="productCanilir">&#8226; армування цегляної кладки</li>
+            <li class="productCanilir">&#8226; укладання кахлю</li>
+          </ul>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn5">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product5-------------------- -->
+        <section class="weldedMeshInfoWrapper5">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product5/prod5Img1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Армопояс</h3>
+              <p class="meshWeldedDescr">Області застосування:</p>
+              <ul class="meshWeldedList">
+                <li>штукатурні роботи</li>
+                <li>армування при заливці підлог, перекриттів, фундаментів</li>
+                <li>зміцнення гірських виробітків</li>
+                <li>укладання кахлю</li>
+                <li>армування цегляної кладки</li>
+                <li>
+                  армування збірних і монолітних залізобетонних конструкцій і
+                  виробів
+                </li>
+                <li>конструювання каркасів для теплиць</li>
+                <li>зведення декоративних металевих огорож</li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product5/prod5Img2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Армопояс</h3>
+              <p class="meshWeldedDescr">
+                Сітка кладочна (армопояс) - це зварна сітка, яка виробляється
+                шляхом зварювання дротів, діаметр яких .На сьогоднішній день
+                сітка кладки користується великим попитом, за рахунок невисокої
+                ціни, високої міцності, надійності та стійкості до корозії.
+              </p>
+              <p class="meshWeldedDescr">Сітка кладочна :</p>
+              <ul class="meshWeldedList">
+                <li>Діаметр дроту від 2 до 5мм.</li>
+                <li>Карти 0,25м*2м</li>
+                <li>Карти 0,37м*2м</li>
+                <li>Карти 0,5м*2м</li>
+                <li>Карти 1,0м*2м</li>
+              </ul>
+              <p class="meshWeldedDescr">
+                Можливе виготовлення карт різноманітних розмірів, під
+                замовлення.
+              </p>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods5">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose5">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product6">
+          <img
+            class="productGoodsImg"
+            src="../Images/Production/product6/sitkaRabucaPVH.png"
+            alt="mechPvh"
+          />
+          <h4 class="productGoodsTitle">Сітка рабиця Пвх</h4>
+          <p class="productGoodsText">
+            Сітка рабиця в полімері має підвищену міцність, еластичність, стійка
+            до розривів, не створює тіні, відрізняється порівняно невеликою
+            вагою конструкції. Виготовляється з металевого дроту із нанесенням
+            полімеру.
+          </p>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn6">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product6-------------------- -->
+        <section class="weldedMeshInfoWrapper6">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product6/prod6Img1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка рабиця в полімері</h3>
+              <p class="meshWeldedDescr">
+                Сітка рабиця в полімері має підвищену міцність, еластичність,
+                стійка до розривів, не створює тіні, відрізняється порівняно
+                невеликою вагою конструкції. Виготовляється з металевого дроту
+                із нанесенням полімеру.
+              </p>
+              <p class="meshWeldedDescr">
+                В якості сировини служить низьковуглецева сталь.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  по виду обробки: термічно оброблений і необроблений;
+                  загартований; нормалізований; стабілізований; холоднокатаний;
+                  калібрований.
+                </li>
+                <li>
+                  по виду поверхні: без покриття, оцинкований; з полімерним
+                  покриттям
+                </li>
+                <li>
+                  за типом перетину: круглий; шестигранний; квадратний;
+                  трапецієподібний; овальний; сегментний; зето - іксо подібний;
+                  клиноподібний; періодичного і спеціального профілю тощо.
+                </li>
+              </ul> -->
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product6/prod6Img2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка рабиця в полімері</h3>
+              <p class="meshWeldedDescr">
+                Дріт, з якого створюється така сітка, покривається спеціальним
+                полімерним складом, з допомогою чого виріб набуває привабливий
+                вигляд і чудово захищають від негативних природних
+                впливів. Область її застосування повністю аналогічна
+                використанню звичайного виду сітки рабиці.
+              </p>
+              <ul class="meshWeldedList">
+                <li>Діаметр дроту від 2,5мм.</li>
+                <li>Висота рулона від 0,5м. до 2м.</li>
+                <li>Вічко від 40мм. до 70мм.</li>
+              </ul>
+              <p class="meshWeldedDescr">
+                Можливе виготовлення сітки різноманітних розмірів, під
+                замовлення.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  Оцинкований дріт - стійкий до корозії, з круглим перетином і
+                  діаметром від 0,2 до 8 мм.
+                </li>
+                <li>
+                  Зварювальний дріт - застосовують у з'єднанні труб і
+                  металоконструкцій. Його діаметр - від 0,6 до 5 мм.
+                </li>
+                <li>
+                  В'язальний - виготовляється з низьковуглецевих типів сталі
+                  методом волочіння, і застосовується при виготовленні тросів,
+                  сітки та ін. Має зазвичай в діаметрі 2 мм.
+                </li>
+                <li>
+                  Армуючий - діаметром 4 мм, застосовується для додаткового
+                  армування залізобетонних конструкцій.
+                </li>
+                <li>
+                  Колючий дріт єгоза - армована стрічка з щербинами, яка
+                  застосовується для перешкоди потраплянню на територію.
+                  Зазвичай, такий дріт поєднують з відеоспостереженням.
+                </li>
+                <li>
+                  Пружинний дріт - виготовляється зі сталевої катанки.
+                  Відрізняється міцністю і пружністю.
+                </li>
+                <li>
+                  Спіраль Бруно - кручена з декількох проводів звичайного і
+                  колючого типу. Являє собою циліндричну спіраль 70-130 см в
+                  діаметрі і довжиною до 25 м.
+                </li>
+              </ul> -->
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods6">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose6">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product7">
+          <img
+            class="productGoodsImg product7Img"
+            src="../Images/Production/product7/sitkaRabucaOcunk.jpg"
+            alt="mechSlave"
+          />
+          <h4 class="productGoodsTitle">Сітка рабиця оцинкована</h4>
+          <p class="productGoodsText">
+            Цинкове покриття нанесене методом гарячого цинкування.
+          </p>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn7">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product7-------------------- -->
+        <section class="weldedMeshInfoWrapper7">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product7/prod7Img1.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка рабиця оцинкована.</h3>
+              <p class="meshWeldedDescr">
+                Цинкове покриття нанесене методом гарячого цинкування.
+              </p>
+              <p class="meshWeldedDescr">
+                Оцинкована сітка для огорожі, рабиця оцинкована використовується
+                для встановлення огороджувальних конструкцій на дачних ділянках,
+                дитячих і спортивних майданчиках, інших місцях спільного
+                перебування.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  по виду обробки: термічно оброблений і необроблений;
+                  загартований; нормалізований; стабілізований; холоднокатаний;
+                  калібрований.
+                </li>
+                <li>
+                  по виду поверхні: без покриття, оцинкований; з полімерним
+                  покриттям
+                </li>
+                <li>
+                  за типом перетину: круглий; шестигранний; квадратний;
+                  трапецієподібний; овальний; сегментний; зето - іксо подібний;
+                  клиноподібний; періодичного і спеціального профілю тощо.
+                </li>
+              </ul> -->
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product7/prod7Img2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка рабиця оцинкована.</h3>
+              <p class="meshWeldedDescr">
+                Сітка рабиця оцинкована має слідуючі параметри:
+              </p>
+              <ul class="meshWeldedList">
+                <li>Діаметр дроту від 1,5мм. До 4.0мм.</li>
+                <li>Висота рулона від 0,5м. до 2м.</li>
+                <li>Вічко від 40мм. до 70мм.</li>
+              </ul>
+              <p class="meshWeldedDescr">
+                Можливе виготовлення сітки різноманітних розмірів, під
+                замовлення.
+              </p>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods7">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose7">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product8">
+          <img
+            class="productGoodsImg prductImg8"
+            src="../Images/Production/product8/sitkaComposit.jpg"
+            alt="mechWiresSecond"
+          />
+          <h4 class="productGoodsTitle">Композитна сітка</h4>
+          <p class="productGoodsText">
+            Використовується для армування бетонних конструкцій:
+          </p>
+          <ul class="productCanilirBox">
+            <li class="productCanilir">&#8226; для парника</li>
+            <li class="productCanilir">&#8226; для фундаменту</li>
+            <li class="productCanilir">&#8226; для теплиць</li>
+          </ul>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn8">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product8-------------------- -->
+        <section class="weldedMeshInfoWrapper8">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product8/sitkaComposit.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Композитна сітка</h3>
+              <p class="meshWeldedDescr">
+                Композитная сітка cкладається з склоровінгу пов'язаного
+                полімером на основі епоксидної смоли.
+              </p>
+              <p class="meshWeldedDescr">
+                Не токсична, за ступенем впливу на організм людини і навколишнє
+                середовище відноситься до 4 класу небезпеки (малонебезпечні).
+                Можна застосувати в промислово-цивільному, дорожньому
+                будівництві, також в бетонних конструкціях з армуванням, замість
+                сталевої арматури.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>
+                  по виду обробки: термічно оброблений і необроблений;
+                  загартований; нормалізований; стабілізований; холоднокатаний;
+                  калібрований.
+                </li>
+                <li>
+                  по виду поверхні: без покриття, оцинкований; з полімерним
+                  покриттям
+                </li>
+                <li>
+                  за типом перетину: круглий; шестигранний; квадратний;
+                  трапецієподібний; овальний; сегментний; зето - іксо подібний;
+                  клиноподібний; періодичного і спеціального профілю тощо.
+                </li>
+              </ul> -->
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product8/sitkaComposit.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Композитна сітка</h3>
+              <p class="meshWeldedDescr">Композитна сітка:</p>
+              <ul class="meshWeldedList">
+                <li>Рулон 30м. довжина, 1м. ширина.</li>
+                <li>Діаметр від3 до 4 мм.</li>
+              </ul>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods8">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose8">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product9">
+          <img
+            class="productGoodsImg productImg9"
+            src="../Images/Production/product9/sitkaSadova.png"
+            alt="mechArmobelt"
+          />
+          <h4 class="productGoodsTitle">Сітка пластикова садова</h4>
+          <p class="productGoodsText productGoodsTextLong">
+            Сітка пластикова використовується для зручності облаштування
+            різноманітних територій,квітників, садів та декору.
+          </p>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn9">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product9-------------------- -->
+        <section class="weldedMeshInfoWrapper9">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product9/sitkaSadova.png"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка пластикова садова</h3>
+              <p class="meshWeldedDescr">
+                Надійна, безпечна та доступна за вартістю сітка ПВХ.
+              </p>
+              <p class="meshWeldedDescr">Переваги пластикової сітки ПВХ:</p>
+              <ul class="meshWeldedList">
+                <li>має УФ-стабілізатор</li>
+                <li>легка вага</li>
+                <li>стійка до температур</li>
+                <li>екологічно безпечна</li>
+                <li>широкий спектр застосування</li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product9/sitkaSadova2.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">Сітка пластикова садова</h3>
+              <p class="meshWeldedDescr">Сітка пластикова садова "Паркан":</p>
+              <ul class="meshWeldedList">
+                <li>Діаметр 2,2мм.</li>
+                <li>Довжина рулона 30м.</li>
+                <li>Ширина від 0,5м. до 2,0м.</li>
+              </ul>
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods9">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose9">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+        <article class="productGoodsBox product10">
+          <img
+            class="productGoodsImg productImg10"
+            src="../Images/Production/product10/kaluchiyDrit.jpg"
+            alt="mechArmobelt"
+          />
+          <h4 class="productGoodsTitle">Дріт колючий двухосновний в мотках</h4>
+          <p class="productGoodsText productGoodsTextLong">
+            Покриття - технологія гарячого цинкування .Це робить дріт
+            оцинкований, дуже довговічним матеріалом.
+          </p>
+          <div class="productGoodsLinkBox">
+            <p class="productInfoDetail meshBtn10">Детальніше</p>
+          </div>
+        </article>
+        <!-- -------------product10-------------------- -->
+        <section class="weldedMeshInfoWrapper10">
+          <p class="weldedMeshInfoText">
+            Сталева дріт в'язальний є досить затребуваним матеріалом. Дріт -
+            різновид довгомірного прокату, виробленого з низьковуглецевої сталі
+            загального призначення з вмістом вуглецю до 0,25%. Вона знаходить
+            широке застосування в будівництві та ландшафтному дизайні,
+            комунальному господарстві, торгівлі, а також при виготовленні
+            канатів, габіонів і сіток для огорожі вольєрів і кліток.
+          </p>
+          <p class="weldedMeshInfoText wdMEsh">
+            Дріт також розподіляють по групах і марках сталі. Дріт звичайної
+            якості виготовляється з низьковуглецевої сталі шляхом волочіння з
+            марок сталі: Ст0М, Ст0, Ст1, Ст2, Ст3.
+          </p>
+          <article class="weldedMeshInfoBox">
+            <div>
+              <img
+                class="meshWelde1 imgDetailProduct1"
+                src="../Images/Production/product10/kaluchiyDrit.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">
+                Дріт колючий двухосновний в мотках
+              </h3>
+              <p class="meshWeldedDescr">
+                Діаметр основи становить 1,6-2,8 мм, найбільш колючок 1,4-2,5
+                мм.
+              </p>
+              <p class="meshWeldedDescr">
+                Колючки розташовані на відстані: 60-150 мм
+              </p>
+              <p class="meshWeldedDescr">
+                Переваги колючого двошарового дроту:
+              </p>
+              <ul class="meshWeldedList">
+                <li>
+                  монтувати різними способами: натягувати зверху огородження або
+                  між стійками;
+                </li>
+                <li>простота і легкість монтажу;</li>
+                <li>висока якість виробу;</li>
+                <li>доступна ціна;</li>
+              </ul>
+            </div>
+          </article>
+          <article class="weldedMeshInfoBox2">
+            <div>
+              <img
+                class="meshWelde2 imgDetailProduct1"
+                src="../Images/Production/product10/kaluchiyDrit.jpg"
+                alt="mesh"
+              />
+            </div>
+            <div>
+              <h3 class="meshWeldedTitle">
+                Дріт колючий двухосновний в мотках
+              </h3>
+              <p class="meshWeldedDescr">Дріт оцинкований фасована по 50-55м</p>
+              <p class="meshWeldedDescr">
+                Покриття - технологія гарячого цинкування .Це робить дріт
+                оцинкований, дуже довговічним матеріалом. Саме тому оцинкований
+                дріт можна використовувати як в приміщеннях, так і на вулиці.
+              </p>
+              <p class="meshWeldedDescr">
+                Дріт оцинкований виготовляється з вуглецевої сталі, спочатку
+                проходить процес термообробки, який полягає в нагріванні металу
+                до заданої температури, витримці її при цій температурі протягом
+                певного часу з подальшим охолодженням. При цьому руйнується
+                внутрішня напруга, викликане механічною обробкою, і змінюється
+                кристалічна структура дроту, що надає йому більшу пластичність.
+                Другим і заключним етапом формування готового продукту є процес
+                цинкування.
+              </p>
+              <!-- <ul class="meshWeldedList">
+                <li>Діаметр 2,2мм.</li>
+                <li>Довжина рулона 30м.</li>
+                <li>Ширина від 0,5м. до 2,0м.</li>
+              </ul> -->
+              <div class="productInfoBox">
+                <p class="productInfoDetail orderGoods10">Замовити товар</p>
+                <p class="productInfoDetailClose meshClose10">Закрити</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- --------------------------------------------- -->
+      </section>
+    </section>
+    <section class="about">
+      <div class="aboutCountainer">
+        <article class="aboutTitleBox">
+          <img src="../Images/logoHeader.svg" alt="logoHeader" />
+          <h3 class="aboutNameFirm">ТОВ “НОВИЙ-ДВІР”</h3>
+        </article>
+        <div class="aboutTextBox">
+          <p class="aboutText">
+            Компанія «Новий Двір» самостійно займається виробництвом дротяних
+            виробів. Ми можемо гарантувати вам їх гідну якість та швидку
+            доставку до вашого міста. Наша компанія співпрацює не лише з
+            великими будівельними компаніями, а й із побутовими споживачами. Для
+            оптових покупців ми завжди пропонуємо знижки та вигідні пропозиції,
+            а побутовим споживачам – професійну консультацію з будівництва та
+            ремонту. У нас ви можете не тільки купити металеву сітку, але й
+            багато будівельних матеріалів за дуже вигідними цінами.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="footerInfo">
+        <img
+          class="footerLogo"
+          src="../Images/logoHeader.svg"
+          alt="logoHeader"
+        />
+        <h3 class="footerTitle">ТОВ “НОВИЙ-ДВІР”</h3>
+        <p class="footerText">м. Рівне, вул. Присадибна, 14а, Рівне, Україна</p>
+        <div class="footerText">
+          <a href="mailto:sitkand@gmail.com" class="footerText"
+            >sitkand@gmail.com</a
+          >
+        </div>
+        <div class="footerText">
+          <a href="tel:+380673621151" class="footerText">067 362 1151</a>
+        </div>
+      </section>
+      <section>
+        <nav>
+          <ul class="footerMenuBox">
+            <li class="menuItemLi">
+              <a
+                class="footerMenuItem footerMenuItemActive"
+                href="../Index.html"
+                >Головна</a
+              >
+            </li>
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="../Product/Product.html"
+                >Продукція</a
+              >
+            </li>
+            <!-- <li>
+              <a class="menuItem" href="../Promotions/Promotions.html">Акції</a>
+            </li> -->
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="../AboutUs/AboutUs.html"
+                >Про нас</a
+              >
+            </li>
+            <li class="menuItemLi">
+              <a class="footerMenuItem" href="../Contacts/Contacts.html"
+                >Контакти</a
+              >
+            </li>
+            <!-- <li class="menuItem">Вігуки</li> -->
+          </ul>
+        </nav>
+      </section>
+      <section class="socialNetwork">
+        <h4 class="socialTitle">Приєднуйтесь до нас</h4>
+        <div class="socialBox">
+          <a href="#">
+            <img src="../Images/footer/facebook.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="../Images/footer/twitter.svg" alt="twitter" />
+          </a>
+          <a href="#">
+            <img src="../Images/footer/instagram.svg" alt="instagram" />
+          </a>
+          <a href="#">
+            <img src="../Images/footer/youtube.svg" alt="youtube" />
+          </a>
+        </div>
+      </section>
+      <section class="subscribe">
+        <h4 class="subscribeTitle">Підписатись на наші новини</h4>
+        <form
+          class="subscribeForm"
+          action="http://127.0.0.1:5501/form"
+          method="POST"
+        >
+          <input class="subscribeInput" name="name" placeholder="Ім’я" />
+          <input
+            type="email"
+            class="subscribeInput"
+            name="email"
+            placeholder="Email address"
+          />
+          <label class="subscribeCheckboxText">
+            <input class="subscribeCheckbox" type="checkbox" checked />
+            Я згійдний з правилами
+            <span class="checkmark"></span>
+          </label>
+          <button class="subscribeSubmit" type="submit">Підписатись</button>
+        </form>
+        <p class="copyright">
+          Copyright ©ТОВ Новий двір 2020 - 2022 Всі права захищені
+        </p>
+      </section>
+    </footer>
+    <script src="../Js/main.js"></script>
+  </body>
+</html>

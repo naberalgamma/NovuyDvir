@@ -1,0 +1,1532 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.menuLogoBox {
+  display: flex;
+  align-items: center;
+}
+
+.menuLogo {
+  margin: 14px 0 14px 140px;
+}
+
+.menuTitle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.menuMenuBox {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.menuItem {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menuItemActive {
+  color: #ffc401;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menuBurger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.menuBurger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #000;
+}
+
+.menuBurger::before,
+.menuBurger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: all 0.3s ease 0s;
+}
+
+.menuBurger::before {
+  top: 0;
+}
+
+.menuBurger::after {
+  bottom: 0;
+}
+
+.menuBurger.active span {
+  position: fixed;
+  top: 10px;
+  transform: scale(0);
+}
+
+.menuBurger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.menuBurger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.menuContact {
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.menuPhone {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.manuLink {
+  margin-left: 30px;
+  color: #000;
+  padding: 10px 42px;
+  background-color: #ffc401;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 150%;
+  transition: all 0.2s ease-in-out;
+}
+
+.manuLink:hover {
+  margin-left: 30px;
+  color: #000;
+  padding: 10px 42px;
+  background-color: #ffc401;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
+}
+
+.open {
+  display: flex !important;
+  padding-top: 70px;
+}
+
+@media (max-width: 1440px) {
+  .menuMenuBox {
+    gap: 0 15px;
+  }
+  .menuLogo {
+    margin: 14px 0 14px 70px;
+  }
+  .menuContact {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .menuContact {
+    display: none;
+  }
+  .menuLogo {
+    margin: 14px 0 14px 10px;
+  }
+  .menuBurger {
+    display: flex;
+    margin-right: 30px;
+  }
+  .menuMenuBox {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: white;
+    row-gap: 30px;
+    animation: burger 0.4s;
+  }
+  @keyframes burger {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+}
+.headerBlock {
+  background: url("../Images/main/block1.png") no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-width: 1920px;
+  height: 980px;
+}
+
+.headerTitle {
+  color: #fff;
+  font-size: 50px;
+  width: 580px;
+  padding: 245px 0 88px 140px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.headerList {
+  padding-left: 140px;
+}
+
+.headerListItem {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.headerPhoneLinks {
+  padding: 70px 0 0 140px;
+  display: flex;
+}
+
+.headerCalcPrice {
+  display: flex;
+  justify-content: center;
+  min-width: 240px;
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerCalcPrice:hover {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
+}
+
+.headerGetCall {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 20px;
+  min-width: 240px;
+  line-height: 150%;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 20px 42px;
+  background-color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerGetCall:hover {
+  margin-left: 100px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 20px 42px;
+  background-color: inherit;
+  transform: scale(1.1);
+}
+
+.CallBox {
+  display: none;
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  background-color: white;
+  z-index: 100;
+  opacity: 0.95;
+}
+
+.CallBox.active {
+  display: block;
+}
+
+.closeIconBox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.callLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.callNumber {
+  display: flex;
+  font-size: 28px;
+  color: #000;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.callName {
+  margin-left: 30px;
+}
+
+.callCopyBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.callCopy {
+  padding: 14px 38px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 24px;
+  line-height: 250%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.callCopy:hover {
+  line-height: 250%;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1440px) {
+  .headerPhoneLinks {
+    padding: 70px 0 0 70px;
+    display: flex;
+  }
+  .headerTitle {
+    font-size: 36px;
+    padding: 228px 0 42px 70px;
+  }
+  .headerBlock {
+    background: url("../Images/main/main1140.png") no-repeat;
+    background-size: contain;
+    max-width: 1440px;
+    height: 925px;
+  }
+  .headerList {
+    padding-left: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .CallBox {
+    display: none;
+    width: 80vw;
+    height: 50vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    background-color: white;
+    z-index: 100;
+    opacity: 0.95;
+  }
+  .headerBlock {
+    background: url("../Images/main/main1140.png") no-repeat;
+    -o-object-fit: fill;
+       object-fit: fill;
+    max-width: 1920px;
+    height: auto;
+  }
+  .headerTitle {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 135px 0 85px 0;
+    width: auto;
+    font-family: Orelega One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .headerList {
+    padding-left: 0px;
+  }
+  .headerListItem {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: Orelega One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .headerPhoneLinks {
+    padding: 70px 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerCalcPrice {
+    padding: 20px 42px;
+    border-radius: 50px;
+    background: #ffc401;
+    color: #253238;
+    font-size: 20px;
+    line-height: 150%;
+    padding: 10px 40px;
+    transition: all 0.2s ease-in-out;
+  }
+  .headerCalcPrice:hover {
+    padding: 20px 42px;
+    border-radius: 50px;
+    background: #ffc401;
+    color: #253238;
+    font-size: 20px;
+    line-height: 150%;
+    transform: scale(1.1);
+  }
+  .headerGetCall {
+    margin-left: 0;
+    padding: 10px 40px;
+    margin: 50px 0 100px 0;
+  }
+  .headerGetCall:hover {
+    margin-left: 0px;
+  }
+  .callNumber {
+    font-size: 20px;
+  }
+  .callName {
+    font-size: 20px;
+  }
+  .callLogoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.goodsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #000;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1440px) {
+  .goodsTitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .goodsTitle {
+    margin-top: 80px;
+    font-size: 22px;
+  }
+}
+.goodsItemsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1440px) {
+  .goodsItemsContainer {
+    gap: 20;
+  }
+}
+.goodsItemBox {
+  position: relative;
+  width: 520px;
+  height: 890px;
+}
+
+@media (max-width: 1440px) {
+  .goodsItemBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    height: 720px;
+  }
+}
+.goodsItemBox:hover {
+  border-radius: 14px;
+  border: 1px solid #ffc401;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.goodsPhoto {
+  margin-top: 65px;
+}
+
+.goodsPhotoRoll {
+  margin-top: 43px;
+}
+
+@media (max-width: 1440px) {
+  .goodsPhoto {
+    max-width: 375px;
+  }
+  .goodsPhotoRoll {
+    max-width: 375px;
+  }
+  .goodsPhotoComposit {
+    max-width: 375px;
+    height: 300px;
+  }
+}
+.goodsItemTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 105px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 26px;
+  line-height: 150%;
+}
+
+.goodsItemTitleComposit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 45px;
+  font-size: 26px;
+  line-height: 150%;
+}
+
+.goodsDescription {
+  margin: 20px 42px 0 42px;
+  color: #455b66;
+  text-align: center;
+  font-size: 20px;
+  line-height: 150%;
+  max-width: 430px;
+}
+
+@media (max-width: 1440px) {
+  .goodsItemTitle {
+    margin-top: 45px;
+    font-size: 24px;
+  }
+  .goodsItemTitleComposit {
+    margin-top: 25px;
+  }
+  .goodsDescription {
+    margin: 20px 42px 0 26px;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+}
+.goodsCalcBox {
+  width: 285px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.goodsCalcPrice {
+  padding: 20px 60px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.clientBlock {
+  background: url("../Images/main/block2.png") no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-width: 1920px;
+  height: 900px;
+  margin-top: 100px;
+}
+
+.clientTextShort {
+  color: #fff;
+  font-size: 28px;
+  max-width: 800px;
+  padding: 190px 0 0 140px;
+}
+
+.clientText {
+  color: #fff;
+  font-size: 38px;
+  max-width: 800px;
+  padding: 90px 0 0 140px;
+}
+
+.clientPhoneLinks {
+  display: flex;
+  padding: 90px 0 0 140px;
+}
+
+@media (max-width: 1440px) {
+  .clientBlock {
+    background: url("../Images/main/block2_1140.png") repeat;
+    background-size: contain;
+    max-width: 1440px;
+    height: 790px;
+    margin-top: 100px;
+  }
+  .headerCalcPrice {
+    padding: 14px 38px;
+    border-radius: 50px;
+    background: #ffc401;
+    color: #253238;
+    font-size: 16px;
+    line-height: 250%;
+    transition: all 0.2s ease-in-out;
+  }
+  .headerCalcPrice:hover {
+    padding: 14px 38px;
+    border-radius: 50px;
+    background: #ffc401;
+    color: #253238;
+    font-size: 16px;
+    line-height: 250%;
+    transform: scale(1.1);
+  }
+  .clientPhoneLinks {
+    display: flex;
+    padding: 90px 0 0 70px;
+  }
+  .headerGetCall {
+    font-size: 16px;
+    line-height: 250%;
+    padding: 12px 38px;
+    transition: all 0.2s ease-in-out;
+  }
+  .headerGetCall:hover {
+    font-size: 16px;
+    line-height: 250%;
+    padding: 12px 38px;
+    transform: scale(1.1);
+  }
+  .clientTextShort {
+    color: #fff;
+    font-size: 20px;
+    max-width: 800px;
+    padding: 190px 0 0 70px;
+  }
+  .clientText {
+    color: #fff;
+    font-size: 30px;
+    max-width: 800px;
+    padding: 90px 0 0 70px;
+  }
+}
+@media (max-width: 1200px) {
+  .clientBlock {
+    background: url("../Images/main/block2_1140.png") no-repeat;
+    -o-object-fit: fill;
+       object-fit: fill;
+    max-width: 1440px;
+    height: 570px;
+    margin-top: 100px;
+  }
+  .headerGetCall {
+    font-size: 16px;
+    line-height: 250%;
+    padding: 12px 38px;
+  }
+  .clientTextShort {
+    font-size: 18px;
+    padding: 40px 0 0 0px;
+    margin: 0 30px;
+    text-align: center;
+  }
+  .clientText {
+    font-size: 20px;
+    padding: 64px 0 0 0px;
+    margin: 0 30px;
+    text-align: center;
+  }
+  .clientPhoneLinks {
+    max-width: 240px;
+    display: block;
+    padding: 0px 0 0 0px;
+    margin: 0 auto;
+  }
+  .headerCalcPrice {
+    padding: 14px 38px;
+    border-radius: 50px;
+    background: #ffc401;
+    color: #253238;
+    font-size: 16px;
+    line-height: 250%;
+    margin-top: 60px;
+  }
+}
+.about {
+  background: #ffc401;
+  background-size: contain;
+  max-width: 1920px;
+  height: 1030px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3px;
+}
+
+.aboutCountainer {
+  max-width: 1440px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 50px;
+  color: #000;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutTitleBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.aboutNameFirm {
+  color: #000;
+  font-size: 40px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+.aboutTextBox {
+  padding: 40px 40px 50px 40px;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+}
+
+@media (max-width: 1440px) {
+  .about {
+    max-width: 1440px;
+    height: 770px;
+  }
+  .aboutCountainer {
+    max-width: 1080px;
+    height: 620px;
+  }
+  .aboutTitleBox {
+    padding-top: 50px;
+  }
+  .aboutTitle {
+    font-size: 32px;
+  }
+  .aboutNameFirm {
+    font-size: 28px;
+  }
+  .aboutText {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    max-width: 1440px;
+    height: auto;
+  }
+  .aboutCountainer {
+    margin: 30px 0;
+    max-width: 1080px;
+    height: auto;
+  }
+}
+.partners {
+  max-width: 1920px;
+  height: 450px;
+  background: #fff;
+}
+
+.partnersTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  color: #000;
+  font-size: 50px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.swiper {
+  width: 500px;
+  height: 200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 10px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin-top: 50px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffc401;
+  width: 20px;
+  height: 20px;
+  color: #ffc401;
+  margin: 0 10px !important;
+}
+
+.cooperation {
+  max-width: 1920px;
+  height: 765px;
+  background: #232323;
+}
+
+.cooperationTitle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  font-size: 50px;
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.cooperationText {
+  color: #fff;
+  font-size: 28px;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cooperationBenefitsWrapper {
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 1265px;
+}
+
+.cooperationBenefitsBox {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 60px;
+  padding-top: 67px;
+}
+
+.cooperationYellowCircleSecond {
+  display: none;
+}
+
+.cooperationBenefits {
+  color: #fff;
+  font-size: 28px;
+  width: 550px;
+}
+
+.cooperationBenefitsFlexibl {
+  color: #fff;
+  font-size: 28px;
+  width: 550px;
+  text-align: right;
+}
+
+.cooperationBenefitsGoodsCreate {
+  color: #fff;
+  font-size: 28px;
+  max-width: 550px;
+  text-align: right;
+}
+
+.cooperationBenefitsKeep {
+  color: #fff;
+  font-size: 28px;
+  max-width: 550px;
+  text-align: right;
+}
+
+.cooperationCallBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.cooperationCall {
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 20px 88px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.cooperationCall:hover {
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 20px 88px;
+  margin-bottom: 20px;
+  transform: scale(1.1);
+}
+
+.cooperationBenefitsBoxRelat {
+  position: relative;
+}
+
+.cooperationLine {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+}
+
+.cooperationSmall {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .cooperationTitle {
+    font-size: 32px;
+  }
+  .cooperationText {
+    font-size: 24px;
+  }
+  .cooperationBenefits {
+    font-size: 22px;
+  }
+  .cooperationBenefitsFlexibl {
+    font-size: 22px;
+  }
+  .cooperationBenefitsGoodsCreate {
+    font-size: 22px;
+  }
+  .cooperationBenefitsKeep {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  .cooperation {
+    max-width: 1920px;
+    height: auto;
+    background: #232323;
+  }
+  .cooperationBenefitsWrapper {
+    display: none;
+  }
+  .cooperationSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .coopBox {
+    position: relative;
+  }
+  .coopBox2 {
+    position: relative;
+  }
+  .coopLineYellow {
+    height: 170px;
+  }
+  .coopLine {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+  }
+  .coopLine2 {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+  }
+  .coopBenef {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .coopBenef2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+  }
+  .coopText {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 43px;
+  }
+  .coopText2 {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 43px;
+  }
+}
+.consultation {
+  max-width: 1920px;
+  height: 790px;
+  background: #fac000;
+  position: relative;
+  overflow: hidden;
+}
+
+.consultationLeftCage {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.consultationRightCage {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.consultationFormBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 620px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.consultationTitle {
+  margin: 40px 50px;
+  width: 420px;
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100%;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.consultationText {
+  width: 350px;
+  margin: 0 85px;
+  color: #253238;
+  text-align: center;
+  font-size: 20px;
+}
+
+.consultationPhone {
+  width: 350px;
+  height: 48px;
+  padding: 13px 25px 13px 25px;
+  font-size: 16px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.1);
+  margin: 60px 85px 40px 85px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.consultationPhone:hover {
+  border-color: #fac000;
+}
+
+.consultationPib {
+  width: 350px;
+  height: 48px;
+  padding: 13px 25px 13px 25px;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 85px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.consultationPib:hover {
+  border-color: #fac000;
+}
+
+.consultationSubmit {
+  display: inline-flex;
+  padding: 20px 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #ffc401;
+  margin: 60px 85px 40px 85px;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%; /* 30px */
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.consultationSubmit:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  background: url("../Images/main/location/location.png") no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-color: #d1d1d1;
+  max-width: 1920px;
+  height: 610px;
+  cursor: pointer;
+  position: relative;
+}
+
+.locationBox {
+  margin-left: 140px;
+  position: relative;
+}
+
+.locationTitle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  color: #000;
+  font-size: 50px;
+}
+
+.locationNames {
+  margin-top: 30px;
+  color: #617e8c;
+  font-size: 24px;
+}
+
+.locationInfo {
+  color: #000;
+  font-size: 28px;
+}
+
+.locationMap {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.locationPinName {
+  color: #000;
+  font-size: 28px;
+}
+
+@media (max-width: 1440px) {
+  .locationBox {
+    margin-left: 70px;
+  }
+  .locationTitle {
+    font-size: 32px;
+  }
+  .locationNames {
+    font-size: 20px;
+  }
+  .locationInfo {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .locationBox {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationInfo {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 320px;
+  background: rgba(52, 52, 52, 0.91);
+  position: relative;
+}
+
+.footerInfo {
+  width: 295px;
+}
+
+.footerLogo {
+  margin-top: 33px;
+}
+
+.footerTitle {
+  color: #fdc500;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.footerText {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footerMenuBox {
+  margin: 30px 0 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+
+.footerMenuItem {
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.footerMenuItemActive {
+  color: #ffc401;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.socialNetwork {
+  margin: 58px 0 0 0px;
+}
+
+.socialTitle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.socialBox {
+  display: flex;
+  margin-top: 10px;
+  gap: 0 20px;
+}
+
+.subscribe {
+  margin: 58px 0 0 0px;
+}
+
+.subscribeTitle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.subscribeInput {
+  width: 266px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(23, 50, 97, 0.2);
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px 0px;
+  padding: 8px 10px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribeCheckbox {
+  margin-top: 5px;
+}
+
+.subscribeCheckboxText {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribeSubmit {
+  width: 150px;
+  display: inline-flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+}
+
+.subscribeSubmit:hover {
+  width: 150px;
+  display: inline-flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: scale(1.1);
+}
+
+.subscribeCheckboxText {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Hide the browser's default checkbox */
+.subscribeCheckboxText input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.subscribeCheckboxText:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.subscribeCheckboxText input:checked ~ .checkmark {
+  background-color: #ffc401;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.subscribeCheckboxText input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.subscribeCheckboxText .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+  }
+  .copyright {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribeSubmit {
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,846 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+@mixin textMainStyle {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin btnYellowBig {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+}
+@mixin btnYellowMid {
+  padding: 14px 38px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 16px;
+  line-height: 250%;
+}
+body {
+  @include textMainStyle;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.menuLogoBox {
+  display: flex;
+  align-items: center;
+}
+.menuLogo {
+  margin: 14px 0 14px 140px;
+}
+.menuTitle {
+  @include textMainStyle;
+  margin-left: 20px;
+}
+
+.menuMenuBox {
+  display: flex;
+  align-items: center;
+  // margin-left: 228px;
+  gap: 0 30px;
+}
+
+.menuItem {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.menuItemActive {
+  color: #ffc401;
+  font-size: 20px;
+  cursor: pointer;
+}
+//-------burger-------------
+.menuBurger {
+  display: none;
+  position: relative;
+  // left: -100%;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.menuBurger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #000;
+}
+.menuBurger::before,
+.menuBurger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: all 0.3s ease 0s;
+}
+.menuBurger::before {
+  top: 0;
+}
+.menuBurger::after {
+  bottom: 0;
+}
+.menuBurger.active span {
+  position: fixed;
+  top: 10px;
+  transform: scale(0);
+}
+.menuBurger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.menuBurger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+//**********************************
+.CallBox {
+  display: none;
+  width: 50vw;
+  height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  background-color: white;
+  z-index: 100;
+  opacity: 1;
+}
+.CallBox.active {
+  display: block;
+}
+.closeIconBox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.callLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.callNumber {
+  display: flex;
+  font-size: 28px;
+  color: #000;
+  justify-content: center;
+  margin-top: 80px;
+}
+.callName {
+  margin-left: 30px;
+}
+.callCopyBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.callCopy {
+  padding: 14px 38px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 24px;
+  line-height: 250%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.callCopy:hover {
+  line-height: 250%;
+  transform: scale(1.1);
+}
+//-------------------------------
+.menuContact {
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+}
+.menuPhone {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #000;
+}
+.manuLink {
+  margin-left: 30px;
+  color: #000;
+  padding: 10px 42px;
+  background-color: #ffc401;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 150%;
+  transition: all 0.2s ease-in-out;
+}
+.manuLink:hover {
+  margin-left: 30px;
+  color: #000;
+  padding: 10px 42px;
+  background-color: #ffc401;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
+}
+.open {
+  display: flex !important;
+  padding-top: 70px;
+}
+@media (max-width: 1440px) {
+  .menuMenuBox {
+    gap: 0 15px;
+  }
+  .menuLogo {
+    margin: 14px 0 14px 70px;
+  }
+  .menuContact {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .menuContact {
+    display: none;
+  }
+  .menuLogo {
+    margin: 14px 0 14px 10px;
+  }
+  .menuBurger {
+    display: flex;
+    margin-right: 30px;
+  }
+  .menuMenuBox {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    // padding: 0px 40px;
+    background-color: white;
+    // opacity: 0.8;
+    row-gap: 30px;
+    animation: burger 0.4s;
+  }
+
+  @keyframes burger {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .callNumber {
+    font-size: 20px;
+  }
+  .callName {
+    font-size: 20px;
+  }
+  .callLogoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+//---------------aboutUS------------
+.aboutUSWrapper {
+  background: url("../Images/aboutUs/aboutUs.png") no-repeat;
+  object-fit: fill;
+  // background-size: contain;
+  max-width: 1920px;
+  height: 800px;
+}
+.aboutUSTitle {
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 240px;
+  display: flex;
+  justify-content: center;
+}
+.aboutUSText {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 58px;
+}
+.headerCalcPriceBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+}
+.headerCalcPrice {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.headerCalcPrice:hover {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transform: scale(1.1);
+}
+//-----reason-------------------
+.aboutUSReason {
+  background: #eee;
+  max-width: 1920px;
+}
+.aboutUSReasonTitle {
+  color: #000;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.aboutUSReasonText {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+  display: flex;
+  justify-content: center;
+  margin: 60px 220px 0 220px;
+}
+.aboutUSReasonLine {
+  margin: 60px 0 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.aboutUSReasonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.aboutUSStepsBox {
+  background: #ffc401;
+  width: 660px;
+  height: 220px;
+  border-radius: 14px;
+}
+.aboutUSSteps {
+  margin: 40px 79px;
+  color: #2b3252;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.aboutUSGift {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 60px;
+}
+.aboutUSGift2 {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.aboutUSSerteficat {
+  color: #2b3252;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.aboutUSReasonLineBot {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.pdfFileBox {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+}
+.pdfFileWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.pdfFileWrapper:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1.1);
+}
+.pdfDescription {
+  color: #2b3252;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 28px;
+}
+@media (max-width: 1440px) {
+  .aboutUSWrapper {
+    background: url("../Images/aboutUs/aboutUs1440.png") no-repeat;
+    // background-size: contain;
+    object-fit: fill;
+    max-width: 1440px;
+    height: 925px;
+  }
+  .aboutUSReason {
+    background: #eee;
+    max-width: 1440px;
+  }
+  .aboutUSReasonTitle {
+    font-size: 36px;
+    text-align: center;
+  }
+  .aboutUSReasonText {
+    font-size: 18px;
+  }
+  .aboutUSGift {
+    font-size: 18px;
+  }
+  .aboutUSGift2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutUSWrapper {
+    background: url("../Images/aboutUs/aboutUs1440.png") no-repeat;
+    // background-size: contain;
+    object-fit: fill;
+    max-width: 1440px;
+    height: 925px;
+  }
+  .aboutUSReasonTitle {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 30px;
+  }
+  .aboutUSReasonText {
+    font-size: 16px;
+    margin: 20px 30px;
+  }
+  .aboutUSStepsBox {
+    background: #ffc401;
+    width: 660px;
+    height: 180px;
+    border-radius: 14px;
+    margin: 0 30px;
+  }
+  .aboutUSSteps {
+    font-size: 16px;
+    margin: 20px 30px;
+    height: 160px;
+  }
+  .aboutUSGift {
+    font-size: 16px;
+    margin: 0 30px;
+  }
+  .aboutUSGift2 {
+    font-size: 16px;
+    margin: 0 30px;
+  }
+}
+//-------location--------------
+.location {
+  background: url("../Images/main/location/location.png") no-repeat;
+  // background-size: contain;
+  object-fit: fill;
+  background-color: #d1d1d1;
+  max-width: 1920px;
+  height: 610px;
+  cursor: pointer;
+  // margin-top: 100px;
+}
+.locationBox {
+  margin-left: 140px;
+  position: relative;
+}
+.locationTitle {
+  @include textMainStyle;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  color: #000;
+  font-size: 50px;
+}
+.locationMap {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.locationPinName {
+  color: #000;
+  font-size: 28px;
+}
+.locationNames {
+  margin-top: 30px;
+  color: #617e8c;
+  font-size: 24px;
+}
+.locationInfo {
+  color: #000;
+  font-size: 28px;
+}
+// .locationPin {
+//   position: absolute;
+//   top: 400px;
+//   left: 707px;
+// }
+// .locationPinName {
+//   color: #000;
+//   font-size: 28px;
+//   position: absolute;
+//   top: 410px;
+//   left: 755px;
+// }
+@media (max-width: 1440px) {
+  .location {
+    background: url("../Images/location/location1440.png") no-repeat;
+    background-color: #d1d1d1;
+    // background-size: contain;
+    object-fit: fill;
+    max-width: 1440px;
+    height: 595px;
+  }
+  .locationBox {
+    margin-left: 70px;
+  }
+  .locationTitle {
+    font-size: 32px;
+  }
+  .locationNames {
+    font-size: 20px;
+  }
+  .locationInfo {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .location {
+    background: url("../Images/location/location1440.png") no-repeat;
+    background-color: #d1d1d1;
+    // background-size: contain;
+    object-fit: fill;
+    max-width: 1440px;
+    height: 595px;
+  }
+  .locationBox {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .locationInfo {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+//---------footer----------------
+.footer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 320px;
+  background: rgba(52, 52, 52, 0.91);
+  position: relative;
+}
+.footerInfo {
+  width: 295px;
+}
+.footerLogo {
+  margin-top: 33px;
+}
+.footerTitle {
+  color: #fdc500;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.footerText {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 14px;
+}
+.footerMenuBox {
+  margin: 58px 0 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+.footerMenuItem {
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.footerMenuItemActive {
+  color: #ffc401;
+  font-size: 20px;
+  cursor: pointer;
+}
+.socialNetwork {
+  margin: 58px 0 0 0px;
+}
+.socialTitle {
+  @include textMainStyle;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+.socialBox {
+  display: flex;
+  margin-top: 10px;
+  gap: 0 20px;
+}
+
+//------subscribe-------------------
+.subscribe {
+  margin: 58px 0 0 0px;
+}
+@media (max-width: 1440px) {
+}
+
+.subscribeTitle {
+  @include textMainStyle;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.subscribeInput {
+  width: 266px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(23, 50, 97, 0.2);
+  color: #939fb4;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px 0px;
+  padding: 8px 10px;
+  @include textMainStyle;
+}
+.subscribeCheckbox {
+  margin-top: 5px;
+}
+.subscribeCheckboxText {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  @include textMainStyle;
+}
+.subscribeSubmit {
+  width: 150px;
+  display: inline-flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  @include textMainStyle;
+  transition: all 0.2s ease-in-out;
+}
+.subscribeSubmit:hover {
+  width: 150px;
+  display: inline-flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  @include textMainStyle;
+  transform: scale(1.1);
+}
+//-----------checbox------------
+.subscribeCheckboxText {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include textMainStyle;
+}
+
+/* Hide the browser's default checkbox */
+.subscribeCheckboxText input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.subscribeCheckboxText:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.subscribeCheckboxText input:checked ~ .checkmark {
+  background-color: #ffc401;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.subscribeCheckboxText input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.subscribeCheckboxText .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1200px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+  }
+  // .footer {
+  //   display: block;
+  //   height: 320px;
+  //   background: rgba(52, 52, 52, 0.91);
+  //   position: relative;
+  // }
+  // .footerInfo {
+  //   display: none;
+  // }
+  .copyright {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribeSubmit {
+    width: auto;
+  }
+}

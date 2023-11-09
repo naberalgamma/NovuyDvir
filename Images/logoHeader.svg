@@ -1,0 +1,26 @@
+<svg width="65" height="72" viewBox="0 0 65 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_100_912)">
+<path d="M3.75 17.25H20.25C43.0318 17.25 61.5 25.4767 61.5 35.625C61.5 45.7732 43.0318 54 20.25 54H4.875" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<path d="M17.25 54C40.0318 54 58.5 45.7732 58.5 35.625C58.5 25.4767 40.0318 17.25 17.25 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M15 54C37.7818 54 56.25 45.7732 56.25 35.625C56.25 25.4767 37.7818 17.25 15 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M12.75 54C35.5318 54 54 45.7732 54 35.625C54 25.4767 35.5318 17.25 12.75 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M52.875 70.5C33.8212 70.5 16.5 55.0538 16.5 36C16.5 16.9462 33.8212 1.5 52.875 1.5" stroke="#FDC500" stroke-width="4" stroke-linecap="round"/>
+<path d="M53.25 70.125C34.1962 70.125 18.75 55.0538 18.75 36C18.75 16.9462 34.1962 1.5 53.25 1.5" stroke="#FDC500" stroke-width="2" stroke-linecap="round"/>
+<path d="M53.25 70.125C34.1962 70.125 20.25 55.0538 20.25 36C20.25 16.9462 34.1962 1.5 53.25 1.5" stroke="#FDC500" stroke-width="2" stroke-linecap="round"/>
+<path d="M53.25 70.125C34.1962 70.125 21 55.0538 21 36C21 16.9462 34.5712 1.5 53.625 1.5" stroke="#FDC500" stroke-width="2" stroke-linecap="round"/>
+<mask id="mask0_100_912" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="10" width="65" height="29">
+<path d="M64.5 10.5H0V39H64.5V10.5Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_100_912)">
+<path d="M3.75 17.25H20.25C43.0318 17.25 61.5 25.4767 61.5 35.625C61.5 45.7732 43.0318 54 20.25 54H4.875" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<path d="M17.25 54C40.0318 54 58.5 45.7732 58.5 35.625C58.5 25.4767 40.0318 17.25 17.25 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M15 54C37.7818 54 56.25 45.7732 56.25 35.625C56.25 25.4767 37.7818 17.25 15 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path d="M12.75 54C35.5318 54 54 45.7732 54 35.625C54 25.4767 35.5318 17.25 12.75 17.25" stroke="black" stroke-width="3" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_100_912">
+<rect width="64.5" height="72" fill="white"/>
+</clipPath>
+</defs>
+</svg>
