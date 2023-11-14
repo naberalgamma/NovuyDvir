@@ -17,7 +17,8 @@ app.post("/form", (req, res) => {
   res.sendStatus(200);
 });
 
-const test = app.listen(5501, "127.0.0.1", () => {
-  console.log("serverStart");
-  console.log(test.address());
-});
+// const test = app.listen(5501, "127.0.0.1", () => {
+//   console.log("serverStart");
+//   console.log(test.address());
+// });
+module.exports = app;
