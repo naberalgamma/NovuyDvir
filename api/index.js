@@ -8,8 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 // app.get("/", (req, res) => {
 //   console.log(req);
 // });
-app.get("/", function (req, res) {
-  res.sendfile("public/main.html");
+app.get("/test", function (req, res) {
+  console.log(res, req);
+  res.sendStatus(200);
 });
 
 app.post("/form", (req, res) => {
