@@ -290,7 +290,7 @@ body {
   }
 }
 .aboutUSWrapper {
-  background: url("../Images/aboutUs/aboutUs.png") no-repeat;
+  background: url("../Images/AboutUs/aboutUs.png") no-repeat;
   -o-object-fit: fill;
      object-fit: fill;
   max-width: 1920px;
@@ -485,7 +485,7 @@ body {
 
 @media (max-width: 1440px) {
   .aboutUSWrapper {
-    background: url("../Images/aboutUs/aboutUs1440.png") no-repeat;
+    /* background: url("../Images/aboutUs/aboutUs1440.png") no-repeat; */
     -o-object-fit: fill;
        object-fit: fill;
     max-width: 1440px;
@@ -511,7 +511,7 @@ body {
 }
 @media (max-width: 1200px) {
   .aboutUSWrapper {
-    background: url("../Images/aboutUs/aboutUs1440.png") no-repeat;
+    /* background: url("../Images/aboutUs/aboutUs1440.png") no-repeat; */
     -o-object-fit: fill;
        object-fit: fill;
     max-width: 1440px;
