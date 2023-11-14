@@ -1,5 +1,5 @@
 const express = require("express");
-const mailer = require("./nodeMailer");
+const mailer = require("../nodeMailer");
 const port = process.env.PORT || 5501;
 const app = express();
 app.use(express.json());
