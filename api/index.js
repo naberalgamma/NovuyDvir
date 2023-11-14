@@ -8,6 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 // app.get("/", (req, res) => {
 //   console.log(req);
 // });
+app.get("/", function (req, res) {
+  console.log(res, req);
+  res.json({ succes: true });
+});
 app.get("/test", function (req, res) {
   console.log(res, req);
   res.sendStatus(200);
