@@ -51,7 +51,7 @@
         <div class="menuContact">
           <img src="../Images/main/menu/telephone.svg" alt="telephone" />
           <a href="tel:+380673631151" class="menuPhone">067 363 1151</a>
-          <p class="manuLink">Зателефонувати</p>
+          <button class="manuLink">Зателефонувати</button>
         </div>
       </section>
     </header>
@@ -70,7 +70,9 @@
       </article>
       <a href="tel:+380673631151" class="callNumber">+38 067 363 1151</a>
       <div class="callCopyBox">
-        <p class="callCopy" onclick="copyContent()">Скопіювати номер</p>
+        <button class="callCopy" onclick="copyContent()">
+          Скопіювати номер
+        </button>
       </div>
     </div>
     <!-- //---------------------------------------------------------------- -->
@@ -132,7 +134,7 @@
         товарів, які отримує наш споживач.
       </p>
       <div class="productInfoLinks">
-        <p class="productInfoDetailCall">Замовити дзвінок</p>
+        <button class="productInfoDetailCall">Замовити дзвінок</button>
         <!-- <a class="productInfoGetCall" href="#">Замовити дзвінок</a> -->
       </div>
     </section>
@@ -147,7 +149,8 @@
           margin: 0 10px;
         "
       >
-        Замінив назву товару зверху в перших чотирьох блоках для наглядності
+        Замінив назву товару зверху в перших чотирьох блоках для наглядності та
+        2 останніх товари переніс на іншу сторінку
       </p>
       <section class="productGoodsContainer">
         <article class="productGoodsBox product1">
@@ -166,7 +169,7 @@
             паркану.
           </p>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn1">Детальніше</p>
+            <button class="productInfoDetail meshBtn1">Детальніше</button>
           </div>
         </article>
         <!-- -------------product1-------------------- -->
@@ -275,7 +278,7 @@
           </ul>
 
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn2">Детальніше</p>
+            <button class="productInfoDetail meshBtn2">Детальніше</button>
           </div>
         </article>
         <!-- -------------product2-------------------- -->
@@ -361,7 +364,7 @@
             <li class="productCanilir">&#8226; для теплиць</li>
           </ul>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn3">Детальніше</p>
+            <button class="productInfoDetail meshBtn3">Детальніше</button>
           </div>
         </article>
         <!-- -------------product3-------------------- -->
@@ -478,7 +481,7 @@
           </p>
 
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn4">Детальніше</p>
+            <button class="productInfoDetail meshBtn4">Детальніше</button>
           </div>
         </article>
         <!-- </section>
@@ -603,7 +606,7 @@
             <li class="productCanilir">&#8226; укладання кахлю</li>
           </ul>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn5">Детальніше</p>
+            <button class="productInfoDetail meshBtn5">Детальніше</button>
           </div>
         </article>
         <!-- -------------product5-------------------- -->
@@ -697,7 +700,7 @@
             полімеру.
           </p>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn6">Детальніше</p>
+            <button class="productInfoDetail meshBtn6">Детальніше</button>
           </div>
         </article>
         <!-- -------------product6-------------------- -->
@@ -830,7 +833,7 @@
             Цинкове покриття нанесене методом гарячого цинкування.
           </p>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn7">Детальніше</p>
+            <button class="productInfoDetail meshBtn7">Детальніше</button>
           </div>
         </article>
         <!-- -------------product7-------------------- -->
@@ -931,7 +934,7 @@
             <li class="productCanilir">&#8226; для теплиць</li>
           </ul>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn8">Детальніше</p>
+            <button class="productInfoDetail meshBtn8">Детальніше</button>
           </div>
         </article>
         <!-- -------------product8-------------------- -->
@@ -1023,7 +1026,10 @@
             різноманітних територій,квітників, садів та декору.
           </p>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn9">Детальніше</p>
+            <!-- <button class="productInfoDetail meshBtn9">Детальніше</button> -->
+            <div class="productInfoDetail meshBtn9">
+              <a class="meshBtn9" href="./Product9/Product9.html">Детальніше</a>
+            </div>
           </div>
         </article>
         <!-- -------------product9-------------------- -->
@@ -1100,7 +1106,9 @@
             оцинкований, дуже довговічним матеріалом.
           </p>
           <div class="productGoodsLinkBox">
-            <p class="productInfoDetail meshBtn10">Детальніше</p>
+            <div class="productInfoDetail meshBtn10">
+              <a href="../Product/Product10/Product10.html">Детальніше</a>
+            </div>
           </div>
         </article>
         <!-- -------------product10-------------------- -->
@@ -1236,14 +1244,12 @@
         <nav>
           <ul class="footerMenuBox">
             <li class="menuItemLi">
-              <a
-                class="footerMenuItem footerMenuItemActive"
-                href="../Index.html"
-                >Головна</a
-              >
+              <a class="footerMenuItem" href="../Index.html">Головна</a>
             </li>
             <li class="menuItemLi">
-              <a class="footerMenuItem" href="../Product/Product.html"
+              <a
+                class="footerMenuItem footerMenuItemActive"
+                href="../Product/Product.html"
                 >Продукція</a
               >
             </li>

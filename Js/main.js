@@ -117,6 +117,7 @@ const meshClose1 = document.querySelector(".meshClose1");
 const product1 = document.querySelector(".product1");
 
 meshClose1?.addEventListener("click", hideProduct1);
+meshClose1?.addEventListener("click", scrollToCard1);
 meshBtn1?.addEventListener("click", showProduct1);
 meshBtn1?.addEventListener("click", scrollToProduct);
 
@@ -135,6 +136,7 @@ const meshClose2 = document.querySelector(".meshClose2");
 const product2 = document.querySelector(".product2");
 
 meshClose2?.addEventListener("click", hideProduct2);
+meshClose2?.addEventListener("click", scrollToCard2);
 meshBtn2?.addEventListener("click", showProduct2);
 meshBtn2?.addEventListener("click", scrollToProduct);
 
@@ -153,6 +155,7 @@ const meshClose3 = document.querySelector(".meshClose3");
 const product3 = document.querySelector(".product3");
 
 meshClose3?.addEventListener("click", hideProduct3);
+meshClose3?.addEventListener("click", scrollToCard3);
 meshBtn3?.addEventListener("click", showProduct3);
 meshBtn3?.addEventListener("click", scrollToProduct);
 
@@ -171,6 +174,7 @@ const meshClose4 = document.querySelector(".meshClose4");
 const product4 = document.querySelector(".product4");
 
 meshClose4?.addEventListener("click", hideProduct4);
+meshClose4?.addEventListener("click", scrollToCard4);
 meshBtn4?.addEventListener("click", showProduct4);
 meshBtn4?.addEventListener("click", scrollToProduct);
 
@@ -189,6 +193,7 @@ const meshClose5 = document.querySelector(".meshClose5");
 const product5 = document.querySelector(".product5");
 
 meshClose5?.addEventListener("click", hideProduct5);
+meshClose5?.addEventListener("click", scrollToCard5);
 meshBtn5?.addEventListener("click", showProduct5);
 meshBtn5?.addEventListener("click", scrollToProduct);
 
@@ -207,6 +212,7 @@ const meshClose6 = document.querySelector(".meshClose6");
 const product6 = document.querySelector(".product6");
 
 meshClose6?.addEventListener("click", hideProduct6);
+meshClose6?.addEventListener("click", scrollToCard6);
 meshBtn6?.addEventListener("click", showProduct6);
 meshBtn6?.addEventListener("click", scrollToProduct);
 
@@ -225,6 +231,7 @@ const meshClose7 = document.querySelector(".meshClose7");
 const product7 = document.querySelector(".product7");
 
 meshClose7?.addEventListener("click", hideProduct7);
+meshClose7?.addEventListener("click", scrollToCard7);
 meshBtn7?.addEventListener("click", showProduct7);
 meshBtn7?.addEventListener("click", scrollToProduct);
 
@@ -243,6 +250,7 @@ const meshClose8 = document.querySelector(".meshClose8");
 const product8 = document.querySelector(".product8");
 
 meshClose8?.addEventListener("click", hideProduct8);
+meshClose8?.addEventListener("click", scrollToCard8);
 meshBtn8?.addEventListener("click", showProduct8);
 meshBtn8?.addEventListener("click", scrollToProduct);
 
@@ -261,6 +269,7 @@ const meshClose9 = document.querySelector(".meshClose9");
 const product9 = document.querySelector(".product9");
 
 meshClose9?.addEventListener("click", hideProduct9);
+meshClose9?.addEventListener("click", scrollToCard9);
 meshBtn9?.addEventListener("click", showProduct9);
 meshBtn9?.addEventListener("click", scrollToProduct);
 
@@ -279,6 +288,7 @@ const meshClose10 = document.querySelector(".meshClose10");
 const product10 = document.querySelector(".product10");
 
 meshClose10?.addEventListener("click", hideProduct10);
+meshClose10?.addEventListener("click", scrollToCard10);
 meshBtn10?.addEventListener("click", showProduct10);
 meshBtn10?.addEventListener("click", scrollToProduct);
 
@@ -292,18 +302,47 @@ function showProduct10() {
 }
 
 function scrollToProduct() {
-  MeshWelded1?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded2?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded3?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded4?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded5?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded6?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded7?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded8?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded9?.scrollIntoView({ block: "center", behavior: "smooth" });
-  MeshWelded10?.scrollIntoView({ block: "center", behavior: "smooth" });
+  MeshWelded1?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded2?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded3?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded4?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded5?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded6?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded7?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded8?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded9?.scrollIntoView({ block: "start", behavior: "smooth" });
+  MeshWelded10?.scrollIntoView({ block: "start", behavior: "smooth" });
 }
-
+function scrollToCard1() {
+  product1?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard2() {
+  product2?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard3() {
+  product3?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard4() {
+  product4?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard5() {
+  product5?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard6() {
+  product6?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard7() {
+  product7?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard8() {
+  product8?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard9() {
+  product9?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+function scrollToCard10() {
+  product10?.scrollIntoView({ block: "start", behavior: "smooth" });
+}
 //-------------------------orderGoods----------------------------------------------------
 
 const closeIconProduction = document.querySelector(".closeIconProduction");
@@ -337,3 +376,29 @@ function hideModalOrder() {
 function showModalOrder() {
   orderGoodsWrapper.classList.add("active");
 }
+
+// const form = document.querySelector("#form");
+// const nameInput = document.querySelector("[name=name]");
+// const phone = document.querySelector("[name=phone]");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   console.log(nameInput.value);
+//   console.log(phone.value);
+
+//   fetch("http://127.0.0.1:5501/form", {
+//     method: "POST", // *GET, POST, PUT, DELETE, etc.
+//     mode: "cors", // no-cors, *cors, same-origin
+//     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: "same-origin", // include, *same-origin, omit
+//     headers: {
+//       "Content-Type": "application/json",
+//       // 'Content-Type': 'application/x-www-form-urlencoded',
+//     },
+//     redirect: "follow", // manual, *follow, error
+//     referrerPolicy: "no-referrer", // no-referrer, *client
+//     body: JSON.stringify({ name: nameInput.value, phone: phone.value }), // body data type must match "Content-Type" header
+//   }).then((response) => {
+//     console.log(response.status);
+//   });
+// });

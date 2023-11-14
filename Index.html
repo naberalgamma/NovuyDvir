@@ -53,7 +53,7 @@
         <div class="menuContact">
           <img src="./Images/main/menu/telephone.svg" alt="phone" />
           <a href="tel:+380673631151" class="menuPhone">067 363 1151</a>
-          <a class="manuLink" href="#">Зателефонувати</a>
+          <button class="manuLink">Зателефонувати</button>
         </div>
       </section>
       <section class="headerBlock">
@@ -64,8 +64,8 @@
           <li class="headerListItem">Високотехнологічне виробництво</li>
         </ul>
         <div class="headerPhoneLinks">
-          <p class="headerCalcPrice">Зателефонувати</p>
-          <p class="headerGetCall">Замовити дзвінок</p>
+          <button class="headerCalcPrice">Зателефонувати</button>
+          <button class="headerGetCall">Замовити дзвінок</button>
         </div>
       </section>
     </header>
@@ -318,7 +318,9 @@
           </div>
 
           <div class="cooperationCallBox">
-            <p class="cooperationCall showPhoneBox4">Зателефонувати</p>
+            <button class="cooperationCall showPhoneBox4">
+              Зателефонувати
+            </button>
           </div>
         </div>
         <div class="cooperationSmall">
@@ -414,11 +416,11 @@
           <p class="consultationText">
             Наш менеджер зв’яжеться з вами протягом 15 хвилин
           </p>
-          <form action="http://127.0.0.1:5501/form" method="POST">
+          <form action="http://127.0.0.1:5501/form" method="POST" id="form">
             <!-- action="https://formsubmit.co/test202311@ukr.net"
             method="POST" -->
             <input
-              type="number"
+              type="tel"
               class="consultationPhone"
               name="phone"
               placeholder="Номер телефону"
@@ -534,7 +536,7 @@
           />
           <label class="subscribeCheckboxText">
             <input class="subscribeCheckbox" type="checkbox" checked />
-            Я згійдний з правилами
+            Я згідний з правилами
             <span class="checkmark"></span>
           </label>
           <button class="subscribeSubmit" type="submit">Підписатись</button>
