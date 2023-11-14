@@ -10,10 +10,7 @@
     "prettier": "^3.0.3",
     "swiper": "^11.0.3"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node nodeMailer.js"
-  },
+
   "author": "",
   "license": "ISC"
 }
