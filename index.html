@@ -416,7 +416,7 @@
           <p class="consultationText">
             Наш менеджер зв’яжеться з вами протягом 15 хвилин
           </p>
-          <form action="http://127.0.0.1:5501/form" method="POST" id="form">
+          <form action="/form" method="POST" id="form">
             <!-- action="https://formsubmit.co/test202311@ukr.net"
             method="POST" -->
             <input
@@ -522,11 +522,7 @@
       </section>
       <section class="subscribe">
         <h4 class="subscribeTitle">Підписатись на наші новини</h4>
-        <form
-          class="subscribeForm"
-          action="http://127.0.0.1:5501/form"
-          method="POST"
-        >
+        <form class="subscribeForm" action="/form" method="POST">
           <input class="subscribeInput" name="name" placeholder="Ім’я" />
           <input
             type="email"
