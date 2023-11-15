@@ -40,9 +40,9 @@ async function main(data) {
   //
 }
 
-// main().catch(console.error);
+main().catch(console.error);
 
-// module.exports = { main };
+module.exports = { main };
 
 const express = require("express");
 // const mailer = require("../nodeMailer");
@@ -65,34 +65,9 @@ app.get("/api/test", function (req, res) {
 
 app.post("/api/form", (req, res) => {
   console.log('checkpoint2');
-  async function main(data) {
-    const transporter = nodemailer.createTransport({
-      // service: "ukr",
-      host: "smtp.ukr.net",
-      port: 465,
-      secure: true,
-      auth: {
-        // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD,
-      },
-    });
-    // send mail with defined transport object
-    console.log("it start");
-    const info = await transporter.sendMail({
-      from: "test202311@ukr.net", // sender address
-      to: "dotafight@gmail.com", // list of receivers
-      subject: "Передзвоніть мені!", // Subject line
-      // text: `Номер телефону:${phone ? phone : ""}, пошта:${
-      //   mail ? mail : ""
-      // }, ім'я:${nameUser ? nameUser : ""}`, // plain text body
-      text: `tel: ${data?.phone}, name: ${data?.name}, email: ${data?.email}`,
-      html: `tel: ${data?.phone ? data?.phone : "дані відсутні"}, name: ${
-        data?.name ? data?.name : "дані відсутні"
-      }, email: ${data?.email ? data?.email : "дані відсутні"}`, // html body
-    })
-  res.sendStatus(200)
-}});
+  main(req.body);
+  res.sendStatus(200);
+});
 
 // const test = app.listen(5501, "127.0.0.1", () => {
 //   console.log("serverStart");
