@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
   res.sendfile("public/main.html");
 });
 
-app.post("/form", (req, res) => {
+app.post("/api/form", (req, res) => {
   mailer.main(req.body);
   res.sendStatus(200);
 });

@@ -76,6 +76,7 @@ async function main(data) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
 async function handler(req, res) {
+  console.log(req, res);
   await main(req.body);
   return res.json({
     message: "Hello ".concat(name, "!"),
