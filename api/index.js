@@ -40,47 +40,48 @@ async function main(data) {
   //
 }
 
-// main().catch(console.error);
+main().catch(console.error);
 
 // module.exports = { main };
 
-// const express = require("express");
-// // const mailer = require("../nodeMailer");
-// // const port = process.env.PORT || 5501;
-// const app = express();
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
-
-// // app.get("/", (req, res) => {
-// //   console.log(req);
-// // });
-// app.get("/", function (req, res) {
-//   console.log(res, req);
-//   res.json({ succes: true });
+const express = require("express");
+// const mailer = require("../nodeMailer");
+// const port = process.env.PORT || 5501;
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+console.log('checkpoint1');
+// app.get("/", (req, res) => {
+//   console.log(req);
 // });
-// app.get("/test", function (req, res) {
-//   console.log(res, req);
-//   res.sendStatus(200);
+app.get("/", function (req, res) {
+  console.log(res, req);
+  res.json({ succes: true });
+});
+app.get("/test", function (req, res) {
+  console.log(res, req);
+  res.sendStatus(200);
+});
+
+app.post("api/form", (req, res) => {
+  console.log('checkpoint2');
+  mailer.main(req.body);
+  res.sendStatus(200);
+});
+
+// const test = app.listen(5501, "127.0.0.1", () => {
+//   console.log("serverStart");
+//   console.log(test.address());
 // });
+module.exports = app;
 
-// // app.post("/form", (req, res) => {
-// //   mailer.main(req.body);
-// //   res.sendStatus(200);
-// // });
-
-// // const test = app.listen(5501, "127.0.0.1", () => {
-// //   console.log("serverStart");
-// //   console.log(test.address());
-// // });
-// module.exports = app;
-
-Object.defineProperty(exports, "__esModule", { value: true });
- function handler(req, res) {
-  console.log("it's req:", req);
-  console.log("it's res:", res);
-   main(req.body);
-  return res.json({
-    message: "Hello ".concat(req.name, "!"),
-  });
-}
-exports.default = handler;
+// Object.defineProperty(exports, "__esModule", { value: true });
+//  function handler(req, res) {
+//   console.log("it's req:", req);
+//   console.log("it's res:", res);
+//    main(req.body);
+//   return res.json({
+//     message: "Hello ".concat(req.name, "!"),
+//   });
+// }
+// exports.default = handler;
