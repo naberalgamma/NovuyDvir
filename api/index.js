@@ -69,12 +69,12 @@ app.get("/api/test", function (req, res) {
   res.sendStatus(200);
 });
 
-app.post("/api/form", (req, res) => {
+app.post("/api/form", async (req, res) => {
   console.log("checkpoint2");
   console.log(req.body);
   console.log("22222222222222");
   // console.log(res);
-  main(req.body);
+  await main(req.body);
   res.sendStatus(200);
 });
 
