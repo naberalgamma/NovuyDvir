@@ -75,9 +75,9 @@ async function main(data) {
 // module.exports = app;
 
 Object.defineProperty(exports, "__esModule", { value: true });
-async function handler(req, res) {
+ function handler(req, res) {
   console.log(req, res);
-  await main(req.body);
+   main(req.body);
   return res.json({
     message: "Hello ".concat(name, "!"),
   });
