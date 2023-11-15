@@ -58,14 +58,14 @@ app.get("/", function (req, res) {
   console.log(res, req);
   res.json({ succes: true });
 });
-app.get("/test", function (req, res) {
+app.get("/api/test", function (req, res) {
   console.log(res, req);
   res.sendStatus(200);
 });
 
-app.post("api/form", (req, res) => {
+app.post("/api/form", (req, res) => {
   console.log('checkpoint2');
-  mailer.main(req.body);
+  main(req.body);
   res.sendStatus(200);
 });
 
