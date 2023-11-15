@@ -18,20 +18,25 @@ async function main(data) {
   // send mail with defined transport object
   console.log("it start");
   console.log(data);
-  const info = await transporter.sendMail({
-    from: "test202311@ukr.net", // sender address
-    to: "dotafight@gmail.com", // list of receivers
-    subject: "Передзвоніть мені!", // Subject line
-    // text: `Номер телефону:${phone ? phone : ""}, пошта:${
-    //   mail ? mail : ""
-    // }, ім'я:${nameUser ? nameUser : ""}`, // plain text body
-    text: `tel: ${data?.phone}, name: ${data?.name}, email: ${data?.email}`,
-    html: `tel: ${data?.phone ? data?.phone : "дані відсутні"}, name: ${
-      data?.name ? data?.name : "дані відсутні"
-    }, email: ${data?.email ? data?.email : "дані відсутні"}`, // html body
-  });
+  try {
+    const info = await transporter.sendMail({
+      from: "test202311@ukr.net", // sender address
+      to: "dotafight@gmail.com", // list of receivers
+      subject: "Передзвоніть мені!", // Subject line
+      // text: `Номер телефону:${phone ? phone : ""}, пошта:${
+      //   mail ? mail : ""
+      // }, ім'я:${nameUser ? nameUser : ""}`, // plain text body
+      text: `tel: ${data?.phone}, name: ${data?.name}, email: ${data?.email}`,
+      html: `tel: ${data?.phone ? data?.phone : "дані відсутні"}, name: ${
+        data?.name ? data?.name : "дані відсутні"
+      }, email: ${data?.email ? data?.email : "дані відсутні"}`, // html body
+    });
 
-  console.log("Message sent: %s", info.messageId);
+    console.log("Message sent: %s", info.messageId);
+  } catch (error) {
+    console.log(error);
+  }
+
   // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
   //
