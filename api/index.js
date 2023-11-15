@@ -74,8 +74,10 @@ app.post("/api/form", async (req, res) => {
   console.log(req.body);
   console.log("22222222222222");
   // console.log(res);
+  console.log(req.get("origin"));
   await main(req.body);
-  res.sendStatus(200);
+  // res.sendStatus(200);
+  res.status(200).redirect("https://novuy-dvir.vercel.app");
 });
 
 // const test = app.listen(5501, "127.0.0.1", () => {
