@@ -17,6 +17,7 @@ async function main(data) {
   });
   // send mail with defined transport object
   console.log("it start");
+  console.log(data);
   const info = await transporter.sendMail({
     from: "test202311@ukr.net", // sender address
     to: "dotafight@gmail.com", // list of receivers
@@ -50,7 +51,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-console.log('checkpoint1');
+console.log("checkpoint1");
 // app.get("/", (req, res) => {
 //   console.log(req);
 // });
@@ -64,7 +65,7 @@ app.get("/api/test", function (req, res) {
 });
 
 app.post("/api/form", (req, res) => {
-  console.log('checkpoint2');
+  console.log("checkpoint2");
   main(req.body);
   res.sendStatus(200);
 });
