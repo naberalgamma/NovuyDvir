@@ -66,6 +66,9 @@ app.get("/api/test", function (req, res) {
 
 app.post("/api/form", (req, res) => {
   console.log("checkpoint2");
+  console.log(req);
+  console.log("22222222222222");
+  console.log(res);
   main(req.body);
   res.sendStatus(200);
 });
