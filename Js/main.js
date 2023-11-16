@@ -400,13 +400,18 @@ form?.addEventListener("submit", (e) => {
     },
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *client
-    body: JSON.stringify({ name: nameInput.value, phone: phone.value }), // body data type must match "Content-Type" header
+    body: JSON.stringify({
+      name: nameInput.value,
+      phone: phone.value,
+      email: email?.value,
+    }), // body data type must match "Content-Type" header
   }).then((response) => {
     console.log(response.status);
     if (response.status === 200) {
       alert("Дані відправлено!");
       nameInput.value = "";
       phone.value = "";
+      email.value = "";
     } else {
       console.log("somthing went wrong");
     }
