@@ -382,7 +382,7 @@ const nameInput = document.querySelector("[name=name]");
 const phone = document.querySelector("[name=phone]");
 const email = document.querySelector("[name=email]");
 const footerForm = document.querySelector("#footerForm");
-// const userEmail = document.querySelector("[name=userEmail]");
+const userEmail = document.querySelector("[name=userEmail]");
 const userName = document.querySelector("[name=userName]");
 
 form?.addEventListener("submit", (e) => {
@@ -422,7 +422,7 @@ form?.addEventListener("submit", (e) => {
 footerForm?.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(userName.value);
-  console.log(email.value);
+  console.log(userEmail.value);
 
   fetch("https://novuy-dvir.vercel.app/api/form", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
@@ -435,13 +435,13 @@ footerForm?.addEventListener("submit", (e) => {
     },
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *client
-    body: JSON.stringify({ name: userName.value, email: email.value }), // body data type must match "Content-Type" header
+    body: JSON.stringify({ name: userName.value, email: userEmail.value }), // body data type must match "Content-Type" header
   }).then((response) => {
     console.log(response.status);
     if (response.status === 200) {
       alert("Дані відправлено!");
       userName.value = "";
-      email.value = "";
+      userEmail.value = "";
     } else {
       console.log("somthing went wrong");
     }
