@@ -401,8 +401,8 @@ form.addEventListener("submit", (e) => {
   }).then((response) => {
     console.log(response.status);
     if(response.status === 200) {
-      nameInput.value.reset();
-       phone.value.reset()
+      nameInput.value = '';
+       phone.value = '';
     }  else {
       console.log("somthing went wrong");
     } 
