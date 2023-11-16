@@ -471,6 +471,11 @@ body {
   }
 }
 /* ---------------------------------------------------- */
+.weldedMeshInfoWrapper6 {
+  /* display: none; */
+  max-width: 1920px;
+  background-color: #eee;
+}
 .weldedMeshInfoText {
   display: flex;
   justify-content: center;

@@ -751,7 +751,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 400px;
-  height: 780px;
+  height: 600px;
   position: relative;
 }
 
@@ -779,8 +779,8 @@ body {
   height: 375px;
 }
 
-.prductImg8 {
-  max-width: 380px;
+.productImg8 {
+  width: 380px;
   height: 375px;
 }
 
@@ -834,10 +834,7 @@ body {
   /* margin: 20px 0; */
   transform: translate(-50%);
 }
-.meshBtn9{
-  color: #253238;
-}
-.meshBtn10{
+.detailLink{
   color: #253238;
 }
 @media (max-width: 1440px) {

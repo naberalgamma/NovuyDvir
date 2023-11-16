@@ -471,6 +471,11 @@ body {
   }
 }
 /* ---------------------------------------------------- */
+.weldedMeshInfoWrapper1 {
+  /* display: none; */
+  max-width: 1920px;
+  background-color: #eee;
+}
 .weldedMeshInfoText {
   display: flex;
   justify-content: center;
@@ -595,6 +600,15 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+.productInfoDetail:hover {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
+}
 .productInfoDetailClose {
   padding: 20px 42px;
   border-radius: 50px;
@@ -610,17 +624,9 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-
-.productInfoDetail:hover {
-  padding: 20px 42px;
-  border-radius: 50px;
-  background: #ffc401;
-  color: #253238;
-  font-size: 20px;
-  line-height: 150%;
+.productInfoDetailClose:hover{
   transform: scale(1.1);
 }
-
 @media (max-width: 1440px) {
   .weldedMeshInfoBox {
     padding: 20px 60px;
