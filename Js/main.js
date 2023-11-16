@@ -386,7 +386,7 @@ const userName = document.querySelector("[name=userName]");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(userName.value);
+  console.log(nameInput.value);
   console.log(phone.value);
 
   fetch("https://novuy-dvir.vercel.app/api/form", {
@@ -400,12 +400,12 @@ form.addEventListener("submit", (e) => {
     },
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *client
-    body: JSON.stringify({ name: userName.value, phone: phone.value }), // body data type must match "Content-Type" header
+    body: JSON.stringify({ name: nameInput.value, phone: phone.value }), // body data type must match "Content-Type" header
   }).then((response) => {
     console.log(response.status);
     if (response.status === 200) {
       alert("Дані відправлено!");
-      userName.value = "";
+      nameInput.value = "";
       phone.value = "";
     } else {
       console.log("somthing went wrong");
@@ -414,7 +414,7 @@ form.addEventListener("submit", (e) => {
 });
 footerForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(nameInput.value);
+  console.log(userName.value);
   console.log(email.value);
 
   fetch("https://novuy-dvir.vercel.app/api/form", {
@@ -428,12 +428,12 @@ footerForm.addEventListener("submit", (e) => {
     },
     redirect: "follow", // manual, *follow, error
     referrerPolicy: "no-referrer", // no-referrer, *client
-    body: JSON.stringify({ name: nameInput.value, email: email.value }), // body data type must match "Content-Type" header
+    body: JSON.stringify({ name: userName.value, email: email.value }), // body data type must match "Content-Type" header
   }).then((response) => {
     console.log(response.status);
     if (response.status === 200) {
       alert("Дані відправлено!");
-      nameInput.value = "";
+      userName.value = "";
       email.value = "";
     } else {
       console.log("somthing went wrong");
