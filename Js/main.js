@@ -449,42 +449,42 @@ footerForm?.addEventListener("submit", (e) => {
 });
 
 /////---------------------------------prod1
-const formProd1 = document.querySelector("#formProd1");
-const nameInputProd1 = document.querySelector("[name=nameProd1]");
-const phoneProd1 = document.querySelector("[name=phoneProd1]");
-const emailProd1 = document.querySelector("[name=emailProd1]");
+// const formProd1 = document.querySelector("#formProd1");
+// const nameInputProd1 = document.querySelector("[name=nameProd1]");
+// const phoneProd1 = document.querySelector("[name=phoneProd1]");
+// const emailProd1 = document.querySelector("[name=emailProd1]");
 
-formProd1?.addEventListener("submit", (e) => {
-  e.preventDefault();
-  console.log(nameInputProd1.value);
-  console.log(phoneProd1.value);
-  console.log(emailProd1.value);
+// formProd1?.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   console.log(nameInputProd1.value);
+//   console.log(phoneProd1.value);
+//   console.log(emailProd1.value);
 
-  fetch("https://novuy-dvir.vercel.app/api/form", {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    mode: "cors", // no-cors, *cors, same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer", // no-referrer, *client
-    body: JSON.stringify({
-      name: nameInputProd1.value,
-      phone: phoneProd1.value,
-      email: emailProd1.value,
-    }), // body data type must match "Content-Type" header
-  }).then((response) => {
-    console.log(response.status);
-    if (response.status === 200) {
-      alert("Дані відправлено!");
-      nameInputProd1.value = "";
-      phoneProd1.value = "";
-      emailProd1.value = "";
-    } else {
-      console.log("somthing went wrong");
-    }
-  });
-});
+//   fetch("https://novuy-dvir.vercel.app/api/form", {
+//     method: "POST", // *GET, POST, PUT, DELETE, etc.
+//     mode: "cors", // no-cors, *cors, same-origin
+//     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: "same-origin", // include, *same-origin, omit
+//     headers: {
+//       "Content-Type": "application/json",
+//       // 'Content-Type': 'application/x-www-form-urlencoded',
+//     },
+//     redirect: "follow", // manual, *follow, error
+//     referrerPolicy: "no-referrer", // no-referrer, *client
+//     body: JSON.stringify({
+//       name: nameInputProd1.value,
+//       phone: phoneProd1.value,
+//       email: emailProd1.value,
+//     }), // body data type must match "Content-Type" header
+//   }).then((response) => {
+//     console.log(response.status);
+//     if (response.status === 200) {
+//       alert("Дані відправлено!");
+//       nameInputProd1.value = "";
+//       phoneProd1.value = "";
+//       emailProd1.value = "";
+//     } else {
+//       console.log("somthing went wrong");
+//     }
+//   });
+// });
