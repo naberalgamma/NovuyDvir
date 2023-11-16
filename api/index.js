@@ -57,25 +57,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 console.log("checkpoint1");
-// app.get("/", (req, res) => {
-//   console.log(req);
-// });
-app.get("/", function (req, res) {
-  console.log(res, req);
-  res.json({ succes: true });
-});
-app.get("/api/test", function (req, res) {
-  console.log(res, req);
-  res.sendStatus(200);
-});
 
 app.post("/api/form", async (req, res) => {
-  console.log("checkpoint2");
-  console.log(req.body);
-  console.log("22222222222222");
-  // console.log(res);
-  console.log(req.get("origin"));
-  console.log(req.originalUrl);
   await main(req.body);
   // res.sendStatus(200);
   // res.status(200).redirect("https://novuy-dvir.vercel.app");
