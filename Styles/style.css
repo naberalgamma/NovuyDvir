@@ -564,7 +564,8 @@ body {
   height: 430px;
 }
 .goodsPhotoCompositDrit{
-  width: 520px;
+  margin: 0 20px;
+  max-width: 520px;
   height: 430px;
 }
 @media (max-width: 1440px) {
@@ -770,6 +771,10 @@ body {
     font-size: 16px;
     line-height: 250%;
     margin-top: 60px;
+  }
+  .goodsPhotoDrotu{
+    width: 320px;
+    height: 330px;
   }
 }
 .about {
@@ -1136,7 +1141,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 520px;
+  max-width: 520px;
   height: 620px;
   border-radius: 8px;
   background: #fff;
@@ -1231,7 +1236,6 @@ body {
 .consultationSubmit:hover {
   transform: scale(1.1);
 }
-
 .location {
   background: url("../Images/main/location/location.png") no-repeat;
   -o-object-fit: fill;
