@@ -211,7 +211,7 @@ body {
 .headerBlock {
   background: url("../Images/main/block1.png") no-repeat;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   max-width: 1920px;
   height: 980px;
 }
@@ -410,7 +410,7 @@ body {
   .headerBlock {
     background: url("../Images/main/main1140.png") no-repeat;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1920px;
     height: auto;
   }
@@ -632,7 +632,7 @@ body {
 .clientBlock {
   background: url("../Images/main/block2.png") no-repeat;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   max-width: 1920px;
   height: 900px;
   margin-top: 100px;
@@ -716,7 +716,7 @@ body {
   .clientBlock {
     background: url("../Images/main/block2_1140.png") no-repeat;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1440px;
     height: 570px;
     margin-top: 100px;
@@ -1217,11 +1217,10 @@ body {
 .location {
   background: url("../Images/main/location/location.png") no-repeat;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   background-color: #d1d1d1;
   max-width: 1920px;
   height: 610px;
-  cursor: pointer;
   position: relative;
 }
 
@@ -1546,7 +1545,7 @@ body {
   .footerMenuBox {
     padding: 0 20px;
   }
-  .socialNetwork{
+  .socialNetwork {
     padding: 0 20px;
   }
   .copyright {
@@ -1563,14 +1562,14 @@ body {
   .subscribeSubmit {
     width: auto;
   }
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     .footerInfo {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .footerText{
+    .footerText {
       text-align: center;
     }
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

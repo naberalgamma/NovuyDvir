@@ -292,7 +292,7 @@ body {
 .aboutUSWrapper {
   background: url("../Images/AboutUs/aboutUs.png") no-repeat;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   max-width: 1920px;
   height: 800px;
 }
@@ -396,7 +396,6 @@ body {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-
 }
 
 .aboutUSStepsBox {
@@ -487,7 +486,7 @@ body {
   .aboutUSWrapper {
     /* background: url("../Images/aboutUs/aboutUs1440.png") no-repeat; */
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1440px;
     height: 925px;
   }
@@ -513,7 +512,7 @@ body {
   .aboutUSWrapper {
     /* background: url("../Images/aboutUs/aboutUs1440.png") no-repeat; */
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1440px;
     height: 925px;
   }
@@ -550,11 +549,10 @@ body {
 .location {
   background: url("../Images/main/location/location.png") no-repeat;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   background-color: #d1d1d1;
   max-width: 1920px;
   height: 610px;
-  cursor: pointer;
 }
 
 .locationBox {
@@ -601,7 +599,7 @@ body {
     /* background: url("../Images/location/location1440.png") no-repeat; */
     background-color: #d1d1d1;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1440px;
     height: 595px;
   }
@@ -623,7 +621,7 @@ body {
     /* background: url("../Images/location/location1440.png") no-repeat; */
     background-color: #d1d1d1;
     -o-object-fit: fill;
-       object-fit: fill;
+    object-fit: fill;
     max-width: 1440px;
     height: 595px;
   }
@@ -894,7 +892,7 @@ body {
   .footerMenuBox {
     padding: 0 20px;
   }
-  .socialNetwork{
+  .socialNetwork {
     padding: 0 20px;
   }
   .copyright {
@@ -911,14 +909,14 @@ body {
   .subscribeSubmit {
     width: auto;
   }
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     .footerInfo {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .footerText{
+    .footerText {
       text-align: center;
     }
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
