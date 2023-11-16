@@ -611,7 +611,9 @@ html {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
-  
+  .productInfoDetailClose:hover{
+    transform: scale(1.1);
+  }
   .productInfoDetail:hover {
     padding: 20px 42px;
     border-radius: 50px;

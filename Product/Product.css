@@ -555,6 +555,14 @@ body {
 }
 
 .productInfoDetail {
+  margin-bottom: 30px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.productInfoDetail:hover {
+  transform: scale(1.1);
+}
+.detailLink {
   font-family: Orelega One;
   font-style: normal;
   font-weight: 400;
@@ -562,6 +570,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 20px 42px;
+  margin-bottom: 30px;
   border-radius: 50px;
   background: #ffc401;
   color: #253238;
@@ -569,6 +578,15 @@ body {
   line-height: 150%;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+.detailLink:hover {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
 }
 .productInfoDetailClose {
   padding: 20px 42px;
@@ -586,15 +604,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.productInfoDetail:hover {
-  padding: 20px 42px;
-  border-radius: 50px;
-  background: #ffc401;
-  color: #253238;
-  font-size: 20px;
-  line-height: 150%;
-  transform: scale(1.1);
-}
+
 
 .productInfoGetCall {
   margin-left: 100px;
@@ -834,9 +844,6 @@ body {
   /* margin: 20px 0; */
   transform: translate(-50%);
 }
-.detailLink{
-  color: #253238;
-}
 @media (max-width: 1440px) {
   .productGoodsContainer {
     gap: 20px;
@@ -864,7 +871,7 @@ body {
   .product7Img {
     height: 306px;
   }
-  .prductImg8 {
+  .productImg8 {
     height: 306px;
   }
   .productImg9 {
@@ -896,9 +903,6 @@ body {
 
 .product1 {
   display: block;
-}
-.productInfoDetail{
-  margin-top: 20px;
 }
 .weldedMeshInfoText {
   display: flex;
@@ -1238,6 +1242,9 @@ body {
   .meshWeldedDescr {
     font-size: 20px;
   }
+  .productGoodsTitle2{
+    margin-top: 5px;
+  }
 }
 @media (max-width: 1200px) {
   .weldedMeshInfoBox {
@@ -1259,7 +1266,7 @@ body {
     border-radius: 5px;
   }
   .productInfoDetail {
-    margin: 20px auto;
+    margin: 0px auto 30px auto;
   }
   .meshWeldedTitle {
     font-size: 24px;

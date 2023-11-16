@@ -523,7 +523,7 @@ body {
 .goodsItemBox {
   position: relative;
   width: 520px;
-  height: 890px;
+  height: 600px;
 }
 
 @media (max-width: 1440px) {
@@ -567,7 +567,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 105px;
+  margin-top: 20px;
   font-family: Orelega One;
   font-style: normal;
   font-weight: 400;
@@ -613,6 +613,7 @@ body {
   }
 }
 .goodsCalcBox {
+  margin-top: 40px;
   width: 285px;
   position: absolute;
   bottom: 40px;
