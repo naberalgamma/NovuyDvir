@@ -401,6 +401,7 @@ form.addEventListener("submit", (e) => {
   }).then((response) => {
     console.log(response.status);
     if(response.status === 200) {
+      alert('Дані відправлено!')
       nameInput.value = '';
        phone.value = '';
     }  else {
