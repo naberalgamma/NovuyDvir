@@ -386,7 +386,7 @@ form.addEventListener("submit", (e) => {
   console.log(nameInput.value);
   console.log(phone.value);
 
-  fetch("http://127.0.0.1:5501/form", {
+  fetch("https://novuy-dvir.vercel.app/api/form", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, *cors, same-origin
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
