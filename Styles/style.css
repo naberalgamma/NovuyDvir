@@ -545,12 +545,28 @@ body {
 
 .goodsPhoto {
   margin-top: 65px;
+  width: 520px;
+  height: 300px;
 }
 
 .goodsPhotoRoll {
-  margin-top: 43px;
+  /* margin: 45px 60px 0 60px; */
+  width: 520px;
+  height: 400px;
 }
-
+.goodsPhotoComposit {
+  margin-top: 50px;
+  width: 520px;
+  height: 300px;
+}
+.goodsPhotoDrotu{
+  width: 520px;
+  height: 430px;
+}
+.goodsPhotoCompositDrit{
+  width: 520px;
+  height: 430px;
+}
 @media (max-width: 1440px) {
   .goodsPhoto {
     max-width: 375px;
@@ -567,7 +583,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  text-align: center;
+  margin-top: px;
   font-family: Orelega One;
   font-style: normal;
   font-weight: 400;
@@ -584,7 +601,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   font-size: 26px;
   line-height: 150%;
 }
