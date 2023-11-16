@@ -389,7 +389,7 @@ form?.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(nameInput.value);
   console.log(phone.value);
-  console.log(email.value);
+  console.log(email?.value);
 
   fetch("https://novuy-dvir.vercel.app/api/form", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
