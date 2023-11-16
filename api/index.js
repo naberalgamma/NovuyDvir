@@ -60,8 +60,8 @@ console.log("checkpoint1");
 
 app.post("/api/form", async (req, res) => {
   await main(req.body);
-  // res.sendStatus(200);
-  res.status(200);
+  res.sendStatus(200);
+  // res.status(200);
   // .redirect("https://novuy-dvir.vercel.app");
 });
 
