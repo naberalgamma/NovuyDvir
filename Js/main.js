@@ -384,7 +384,7 @@ const footerForm = document.querySelector("#footerForm");
 const email = document.querySelector("[name=email]");
 const userName = document.querySelector("[name=userName]");
 
-form.addEventListener("submit", (e) => {
+form?.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(nameInput.value);
   console.log(phone.value);
@@ -412,7 +412,7 @@ form.addEventListener("submit", (e) => {
     }
   });
 });
-footerForm.addEventListener("submit", (e) => {
+footerForm?.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(userName.value);
   console.log(email.value);
