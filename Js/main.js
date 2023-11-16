@@ -400,5 +400,11 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify({ name: nameInput.value, phone: phone.value }), // body data type must match "Content-Type" header
   }).then((response) => {
     console.log(response.status);
+    if(response.status === 200) {
+      nameInput.value.reset();
+       phone.value.reset()
+    }  else {
+      console.log("somthing went wrong");
+    } 
   });
 });
