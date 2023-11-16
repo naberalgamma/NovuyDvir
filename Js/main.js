@@ -422,7 +422,7 @@ form?.addEventListener("submit", (e) => {
 footerForm?.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(userName.value);
-  console.log(email.value);
+  console.log(userEmail.value);
 
   fetch("https://novuy-dvir.vercel.app/api/form", {
     method: "POST", // *GET, POST, PUT, DELETE, etc.
