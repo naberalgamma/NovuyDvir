@@ -319,6 +319,7 @@ body {
   align-items: center;
   background-color: white;
   z-index: 100;
+  opacity: 1;
 }
 
 .CallBox.active {
@@ -404,7 +405,7 @@ body {
     align-items: center;
     background-color: white;
     z-index: 100;
-    opacity: 0.95;
+    opacity: 1;
   }
   .headerBlock {
     background: url("../Images/main/main1140.png") no-repeat;
