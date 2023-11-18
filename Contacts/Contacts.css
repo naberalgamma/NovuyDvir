@@ -239,7 +239,7 @@ body {
 @media (max-width: 1200px) {
   .CallBox {
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
   }
   body.lock {
     overflow: hidden;
