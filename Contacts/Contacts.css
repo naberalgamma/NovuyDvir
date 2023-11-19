@@ -36,13 +36,13 @@ body {
 .menuLogo {
   margin: 14px 0 14px 140px;
 }
-
 .menuTitle {
   font-family: Orelega One;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 20px;
+  color: #000;
 }
 
 .menuMenuBox {
