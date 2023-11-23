@@ -685,7 +685,7 @@ body {
 }
 @media (max-width: 1200px) {
   .menuLogo {
-    margin: 14px 0 14px 40px;
+    margin: 14px 0 14px 20px;
   }
   .productInfoWrapper {
     /* background: url("../Images/Production/product1440.png") no-repeat; */
