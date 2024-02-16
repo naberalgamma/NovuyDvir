@@ -308,7 +308,35 @@ body {
   background-color: inherit;
   transform: scale(1.1);
 }
+.deliver {
+  font-family: Orelega One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  min-width: 240px;
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transition: all 0.2s ease-in-out;
+  margin-left: 100px;
+}
 
+.deliver:hover {
+  padding: 20px 42px;
+  border-radius: 50px;
+  background: #ffc401;
+  color: #253238;
+  font-size: 20px;
+  line-height: 150%;
+  transform: scale(1.1);
+}
 .CallBox {
   display: none;
   width: 50vw;
@@ -559,7 +587,6 @@ body {
   }
 }
 
-
 .goodsPhoto {
   margin-top: 10px;
   max-width: 375px;
@@ -586,7 +613,7 @@ body {
   max-width: 290px;
   height: 200px;
 }
-.goodsPhotoCompositSitka{
+.goodsPhotoCompositSitka {
   margin-top: 20px;
   max-width: 290px;
   height: 200px;
@@ -862,7 +889,7 @@ body {
   }
   .aboutCountainer {
     max-width: 1080px;
-    height: 620px;
+    height: 720px;
   }
   .aboutTitleBox {
     padding-top: 50px;

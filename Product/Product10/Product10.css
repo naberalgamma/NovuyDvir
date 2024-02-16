@@ -305,7 +305,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
 }
 /* -------------------orderForm------------------------ */
 .orderGoodsWrapper {
@@ -328,6 +327,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #fff;
+  padding-bottom: 30px;
 }
 
 .consultationTitle {
@@ -544,7 +545,7 @@ body {
   .weldedMeshInfoText {
     margin: 30px 40px 0 40px;
   }
-  .productInfoBox{
+  .productInfoBox {
     flex-direction: column;
     height: none;
     margin-top: 40px;
@@ -624,7 +625,6 @@ body {
   background-color: rgb(250, 74, 74);
 }
 @media (max-width: 1440px) {
-    
   .weldedMeshInfoBox {
     padding: 20px 60px;
   }
@@ -640,12 +640,12 @@ body {
 }
 @media (max-width: 1200px) {
   .weldedMeshInfoText {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      padding: 30px 40px 0 40px;
-    }
-    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 40px 0 40px;
+  }
+
   .weldedMeshInfoBox {
     display: block;
     text-align: center;
@@ -676,7 +676,7 @@ body {
   .weldedMeshInfoText {
     margin: 30px 40px 0 40px;
   }
-  .productInfoBox{
+  .productInfoBox {
     flex-direction: column;
     height: none;
     margin-top: 40px;
@@ -720,7 +720,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.productInfoDetailClose:hover{
+.productInfoDetailClose:hover {
   transform: scale(1.1);
 }
 .productInfoDetail:hover {
@@ -732,7 +732,6 @@ body {
   line-height: 150%;
   transform: scale(1.1);
 }
-
 
 .footer {
   display: flex;
@@ -989,7 +988,7 @@ body {
   .footerMenuBox {
     padding: 0 20px;
   }
-  .socialNetwork{
+  .socialNetwork {
     padding: 0 20px;
   }
   .copyright {
@@ -1006,14 +1005,14 @@ body {
   .subscribeSubmit {
     width: auto;
   }
-  @media (max-width: 480px){
+  @media (max-width: 480px) {
     .footerInfo {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .footerText{
+    .footerText {
       text-align: center;
     }
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

@@ -327,6 +327,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #fff;
+  padding-bottom: 30px;
 }
 
 .consultationTitle {
@@ -625,7 +627,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.productInfoDetailClose:hover{
+.productInfoDetailClose:hover {
   transform: scale(1.1);
 }
 @media (max-width: 1440px) {
